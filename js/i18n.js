@@ -32,11 +32,11 @@
           description: 'ברוכים הבאים לDOMO – מסעדת יוקרה יפנית שמביאה לכם את אומנות האירוח היפני, \'אומוטנאשי\' (おもてなし). אצלנו, כל פרט מחושב בקפידה – מחומרי הגלם המשובחים ועד השירות המושלם.\n\nתנו לנו לקחת אתכם בהובלת הסושי-שף מתן בל למסע קולינרי מלא הכרת תודה, דיוק והרמוניה.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/domologo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
         },
         {
           name: 'האסיאתי',
@@ -44,11 +44,11 @@
           description: 'האסיאתי היא לא עוד מסעדה אסייתית. זה המקום שבו סושי פוגש סטריט-פוד, בוריטו פוגש רול יפני, ופוקה בול נבנה בדיוק כמו שצריך.\n\nרטבים ממכרים שמוכנים כל יום, ונבנו במיוחד בשביל שילוב מושלם עם המנות. מנות טריות, צבעוניות ומלאות בטעם, שמגיעות מהר, אבל מרגישות כמו חוויה.\n\nאז… אם אתם אוהבים אוכל, אתם הולכים להתאהב.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/asiatilogo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/asiati1/300/200', 'https://picsum.photos/seed/asiati2/300/200', 'https://picsum.photos/seed/asiati3/300/200']
         },
         {
           name: 'סמאש בורגר',
@@ -56,11 +56,11 @@
           description: 'סמאש בורגר היא המבורגרייה צעירה ושובבה שמביאה את תרבות ה־Smash Burger האמריקאית לחיפה ולקריות. אנחנו מתמחים בקציצות טריות שנמעכות על הפלנצ\'ה הלוהטת לקבלת קריספיות מושלמת וטעם עמוק, עם גבינה נמסה, לחמניות רכות וחומרי גלם איכותיים.\n\nבתפריט תמצאו המבורגרים מושחתים, צ\'יפס קריספי, רטבים מיוחדים ואווירה שמחה וקלילה. אם באתם לאכול המבורגר טוב באמת – הגעתם למקום הנכון.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/smashlogo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/smash1/300/200', 'https://picsum.photos/seed/smash2/300/200', 'https://picsum.photos/seed/smash3/300/200']
         },
         {
           name: 'ארטו',
@@ -68,20 +68,17 @@
           description: 'מסעדה ומתחם אירועים, דאנס בר יוקרתי לאירועים\nבחיפה. המקום הכי עכשווי, בועט וייחודי שתפגשו.\n\nהמקום משלב בין מטבח יוקרתי, פיוז\'ן לבין מועדון עם קוקטיילים וברמנים, מסיבה ודיג\'יים הכי טובים שיש.\n\nהמקום הוא השילוב המושלם לאירוע\nגם אוכל, גם אלכוהול וגם מסיבה מושלמת.\n\nהמקום מושלם לימי הולדת, מסיבות ברית, מסיבות בר מצווה, חינה יוקרתית, בת מצווה, אירוע משפחתי, אירועי חברה למינהם כגון מסיבות פורים, אירועי קונספט משובחים ואירועים עם אווירה אחרת.\n\nהמקום נועד לאירועים מ40 איש ועד 100 איש\n\nהמקום ידאג לתת לכם את המעטפת המושלמת, עסקת חבילה מלאה, לא תצטרכו להביא כלום מהבית וכל הדרך ידאגו אנשי ההפקה לכל הצרכים שלכם.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/artologo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/arto1/300/200', 'https://picsum.photos/seed/arto2/300/200', 'https://picsum.photos/seed/arto3/300/200']
         }
       ],
       readMore: 'קרא עוד',
       readLess: 'קרא פחות',
       footer: {
-        accessibility: 'הצהרת נגישות',
-        terms: 'תקנון ותנאי שימוש',
-        privacy: 'מדיניות פרטיות',
-        contact: 'צור קשר'
+        developedBy: 'פותח ע״י '
       }
     },
     ru: {
@@ -111,11 +108,11 @@
           description: 'Добро пожаловать в DOMO — японский ресторан премиум-класса, где царит искусство японского гостеприимства «омотэнаси». Каждая деталь продумана: от отборных продуктов до безупречного сервиса. Сусхи-шеф Матан Бел проведёт вас в кулинарное путешествие, полное благодарности, точности и гармонии.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/domologo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
         },
         {
           name: 'ASI ATI',
@@ -123,11 +120,11 @@
           description: 'ASI ATI — это не просто азиатский ресторан. Здесь суши встречается со стрит-фудом, буррито — с японским роллом, а поке-боул собран как надо. Соусы готовят каждый день специально под блюда. Свежие, яркие, насыщенные вкусом порции приходят быстро, но ощущаются как полноценный опыт. Любите еду — здесь вы влюбитесь.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/asiatilogo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/asiati1/300/200', 'https://picsum.photos/seed/asiati2/300/200', 'https://picsum.photos/seed/asiati3/300/200']
         },
         {
           name: 'Смаш Бургер',
@@ -135,11 +132,11 @@
           description: 'Смаш Бургер — молодой и дерзкий бургерный, привёзший американскую культуру smash burger в Хайфу и Крайот. Свежие котлеты обжаривают на раскалённой плитке для хруста и глубокого вкуса, с расплавленным сыром, мягкими булками и качественными продуктами. В меню — сытные бургеры, хрустящий картофель, фирменные соусы и лёгкая весёлая атмосфера. Хотите по-настоящему хороший бургер — вы по адресу.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/smashlogo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/smash1/300/200', 'https://picsum.photos/seed/smash2/300/200', 'https://picsum.photos/seed/smash3/300/200']
         },
         {
           name: 'Арто',
@@ -147,20 +144,17 @@
           description: 'Ресторан и площадка для мероприятий, премиальный данс-бар в Хайфе. Самое современное, дерзкое и особенное место. Сочетание высокой кухни фьюжн с клубом: коктейли, бармены, вечеринки и топовые диджеи. Идеальный формат мероприятия: кухня, бар и отличная вечеринка. Подходит для дней рождения, бар-мицвы, хупы, бат-мицвы, семейных и корпоративных праздников, тематических вечеринок. Вместимость 40–100 гостей. Полный пакет услуг — ничего не нужно приносить, продюсерская команда берёт всё на себя.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/artologo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/arto1/300/200', 'https://picsum.photos/seed/arto2/300/200', 'https://picsum.photos/seed/arto3/300/200']
         }
       ],
       readMore: 'Читать далее',
       readLess: 'Свернуть',
       footer: {
-        accessibility: 'Доступность',
-        terms: 'Условия использования',
-        privacy: 'Конфиденциальность',
-        contact: 'Контакт'
+        developedBy: 'Разработано '
       }
     },
     en: {
@@ -190,11 +184,11 @@
           description: 'Welcome to DOMO — a premium Japanese restaurant bringing you the art of Japanese hospitality, Omotenashi. Every detail is considered, from the finest ingredients to flawless service. Let sushi-chef Matan Bel take you on a culinary journey of gratitude, precision and harmony.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/domologo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
         },
         {
           name: 'ASI ATI',
@@ -202,11 +196,11 @@
           description: 'ASI ATI is not just another Asian restaurant. It\'s where sushi meets street food, burrito meets Japanese roll, and poke bowls are done right. Addictive sauces made daily, built for the perfect match with each dish. Fresh, colorful, full of flavor — served fast but it feels like an experience. If you love food, you\'re going to love it here.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/asiatilogo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/asiati1/300/200', 'https://picsum.photos/seed/asiati2/300/200', 'https://picsum.photos/seed/asiati3/300/200']
         },
         {
           name: 'Smash Burger',
@@ -214,11 +208,11 @@
           description: 'Smash Burger is the young, playful burger joint that brought American Smash Burger culture to Haifa and the Krayot. We specialize in fresh patties smashed on the hot griddle for perfect crisp and deep flavor — melted cheese, soft buns, quality ingredients. On the menu: indulgent burgers, crispy fries, special sauces, and a happy, laid-back vibe. If you came for a really good burger, you\'re in the right place.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/smashlogo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/smash1/300/200', 'https://picsum.photos/seed/smash2/300/200', 'https://picsum.photos/seed/smash3/300/200']
         },
         {
           name: 'Arto',
@@ -226,20 +220,17 @@
           description: 'Restaurant and event venue — a premium dance bar for events in Haifa. The most contemporary, bold and unique place you\'ll find. It combines upscale fusion cuisine with a club: cocktails, bartenders, parties and top DJs. The perfect mix for your event: great food, drinks and a great party. Ideal for birthdays, bar mitzvahs, henna celebrations, bat mitzvahs, family and corporate events, theme parties. For events from 40 to 100 guests. Full package — you don\'t need to bring a thing; the production team takes care of everything.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: PLACEHOLDER_LOGO,
+          logo: 'https://picsum.photos/seed/artologo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: [PLACEHOLDER_IMG, PLACEHOLDER_IMG, PLACEHOLDER_IMG]
+          photos: ['https://picsum.photos/seed/arto1/300/200', 'https://picsum.photos/seed/arto2/300/200', 'https://picsum.photos/seed/arto3/300/200']
         }
       ],
       readMore: 'Read more',
       readLess: 'Read less',
       footer: {
-        accessibility: 'Accessibility',
-        terms: 'Terms of use',
-        privacy: 'Privacy policy',
-        contact: 'Contact'
+        developedBy: 'Developed by '
       }
     }
   };
@@ -266,7 +257,13 @@
       var key = el.getAttribute('data-i18n');
       var value = getByPath(t, key);
       if (value != null && typeof value === 'string') {
-        el.textContent = value;
+        if (el.classList.contains('venue-description')) {
+          el.innerHTML = value.split(/\n\s*\n/).map(function(p) {
+            return '<span class="desc-p">' + p.replace(/\n/g, '<br>') + '</span>';
+          }).join('');
+        } else {
+          el.textContent = value;
+        }
       }
     });
 

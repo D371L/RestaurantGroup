@@ -16,6 +16,3 @@
   flex-direction: row-reverse;
 }
 
-[dir="rtl"] .footer-nav {
-  flex-direction: row-reverse;
-}

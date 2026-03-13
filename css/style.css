@@ -6,8 +6,8 @@
   --color-text: #2c2c2c;
   --color-text-muted: #5a5a5a;
   --color-accent: #8b6914;
-  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-serif: 'Cinzel', Georgia, "Times New Roman", serif;
   --header-h: 3.5rem;
   --container-w:  min(90vw, 960px);
   --radius: 6px;
@@ -22,6 +22,22 @@
 html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #c2aa70;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
 }
 
 body {
@@ -51,13 +67,13 @@ a:hover {
   justify-content: center;
   min-height: 58vh;
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, #2c2c2c 0%, #4a4a4a 100%);
+  background: radial-gradient(circle at top, #3a3a3a 0%, #111111 100%);
   color: #fff;
   text-align: center;
 }
 
 .hero-lang-wrap {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   left: 0;
   right: 0;
@@ -100,6 +116,18 @@ a:hover {
   color: #fff;
 }
 
+/* Hero Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-title {
   margin: 0 0 1.25rem;
   font-family: var(--font-serif);
@@ -111,13 +139,18 @@ a:hover {
   font-size: 0.95rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.2s;
 }
 
 .hero-line-main {
-  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-size: clamp(3.5rem, 10vw, 5rem);
   letter-spacing: 0.05em;
   margin-top: 0.25rem;
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.4s;
 }
 
 .hero-nav {
@@ -125,17 +158,21 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem 1.5rem;
+  animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: 0.4s;
 }
 
 .hero-nav a {
   color: #fff;
   font-weight: 500;
   opacity: 0.9;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease;
 }
 
 .hero-nav a:hover {
   opacity: 1;
-  text-decoration: underline;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* Venues */
@@ -152,6 +189,20 @@ a:hover {
   padding: 1.75rem;
   margin-bottom: 2rem;
   min-height: 32rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.venue-card.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.venue-card.is-revealed:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(139, 105, 20, 0.1);
 }
 
 .venue-card:last-child {
@@ -159,15 +210,16 @@ a:hover {
 }
 
 .venue-name {
-  margin: 0 0 0.35rem;
-  font-size: 1.5rem;
+  margin: 0 0 0.15rem;
+  font-size: 2.25rem;
   font-weight: 700;
+  font-family: var(--font-serif);
   color: var(--color-text);
   text-align: center;
 }
 
 .venue-address {
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   font-size: 0.95rem;
   color: var(--color-text-muted);
   text-align: center;
@@ -176,41 +228,49 @@ a:hover {
 .venue-logo-wrap {
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin: 1.75rem 0;
 }
 
 .venue-logo {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--color-card-border);
 }
 
 .venue-description-wrap {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 
 .venue-description-inner {
+  position: relative;
   overflow: hidden;
   max-height: var(--venue-description-height, 80rem);
-  transition: max-height 7s linear;
+  transition: max-height 0.4s ease-in-out;
   will-change: max-height;
+}
+
+.venue-description-inner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background: linear-gradient(to bottom, rgba(240, 235, 227, 0), var(--color-card) 90%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .venue-description-wrap.is-collapsed .venue-description-inner {
   max-height: 5.5rem;
 }
 
-.venue-description-wrap.is-collapsed .venue-description {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  white-space: normal;
+.venue-description-wrap.is-collapsed .venue-description-inner::after {
+  opacity: 1;
 }
 
 .venue-description {
@@ -219,24 +279,56 @@ a:hover {
   color: var(--color-text);
   max-width: 65ch;
   text-align: center;
-  white-space: pre-line;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.desc-p {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.desc-p:last-child {
+  margin-bottom: 0;
 }
 
 .venue-read-more {
-  display: inline-block;
-  margin: 0.35rem auto 0;
-  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  margin: 0.75rem auto 0;
+  padding: 0 0 2px 0;
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-accent);
   background: none;
   border: none;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.venue-read-more::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent);
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
 .venue-read-more:hover {
   color: var(--color-text);
+}
+
+.venue-read-more:hover::after {
+  transform: scaleX(1);
+  background-color: var(--color-text);
 }
 
 .venue-read-more[hidden] {
@@ -308,6 +400,15 @@ a:hover {
   object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--color-card-border);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.venue-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  z-index: 2;
 }
 
 /* Footer */
@@ -317,22 +418,29 @@ a:hover {
   border-top: 1px solid var(--color-card-border);
 }
 
-.footer-nav {
+.footer-credit {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
   max-width: var(--container-w);
   margin: 0 auto;
-}
-
-.footer-nav a {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--color-text-muted);
 }
 
-.footer-nav a:hover {
-  color: var(--color-accent);
+.hellsec-link {
+  color: #ff3366;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.hellsec-link:hover {
+  text-decoration: underline;
+  color: #ff0040;
+  text-shadow: 0 0 8px rgba(255, 51, 102, 0.4);
 }
 
 /* Responsive */
@@ -358,4 +466,30 @@ a:hover {
   .venue-card {
     padding: 1.25rem;
   }
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 99;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #a37c1a;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }

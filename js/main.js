@@ -41,8 +41,10 @@
       }
 
       var fullText = desc.textContent || '';
-      var parts = fullText.split(/\n\s*\n/);
-      var hasMultiple = parts.length > 1;
+      var hasMultiple = desc.querySelectorAll('.desc-p').length > 1;
+      if (!hasMultiple && fullText.split(/\n\s*\n/).length > 1) {
+        hasMultiple = true;
+      }
       var needsButton = hasMultiple || fullText.length > minLength;
 
       btn.removeAttribute('hidden');
@@ -63,10 +65,32 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupVenueReadMore);
-  } else {
+  function setupScrollReveal() {
+    if (!window.IntersectionObserver) return;
+    
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.venue-card').forEach(function(card) {
+      observer.observe(card);
+    });
+  }
+
+  function init() {
     setupVenueReadMore();
+    setupScrollReveal();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 
   window.setupVenueReadMore = setupVenueReadMore;
