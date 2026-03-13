@@ -1,0 +1,21 @@
+/* RTL overrides when dir="rtl" (e.g. Hebrew) */
+[dir="rtl"] .hero {
+  direction: rtl;
+}
+
+[dir="rtl"] .hero-nav {
+  direction: rtl;
+  flex-direction: row;
+}
+
+[dir="rtl"] .venue-contact {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .venue-contact-icons {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-nav {
+  flex-direction: row-reverse;
+}

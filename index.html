@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Кулинарная группа</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-lang-wrap" dir="ltr">
+        <div class="hero-lang" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+      <h1 id="hero-title" class="hero-title">
+        <span class="hero-line" data-i18n="hero.subtitle">Culinary Group</span>
+        <span class="hero-line hero-line-main" data-i18n="hero.title">Название группы</span>
+      </h1>
+      <nav class="hero-nav" aria-label="Restaurants">
+        <a href="#venue-domo" data-i18n="nav.venueDomo">דומו</a>
+        <a href="#venue-haasiyati" data-i18n="nav.venueHaasiyati">האסיאתי</a>
+        <a href="#venue-smash" data-i18n="nav.venueSmash">סמאש בורגר</a>
+        <a href="#venue-arto" data-i18n="nav.venueArto">ארטו</a>
+      </nav>
+    </section>
+
+    <section id="venues" class="venues">
+      <article id="venue-domo" class="venue-card" data-venue="0">
+        <h2 class="venue-name" data-i18n="venues.0.name">דומו</h2>
+        <p class="venue-address" data-i18n="venues.0.address">Адрес</p>
+        <div class="venue-logo-wrap">
+          <img class="venue-logo" src="" alt="" data-i18n-attr="src:venues.0.logo;alt:venues.0.name" width="80" height="80">
+        </div>
+        <div class="venue-description-wrap">
+          <div class="venue-description-inner">
+            <p class="venue-description" data-i18n="venues.0.description">Описание ресторана.</p>
+          </div>
+          <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
+        </div>
+        <div class="venue-contact">
+          <div class="venue-contact-icons">
+            <a href="#" class="venue-icon" aria-label="Phone" data-i18n-attr="href:venues.0.phoneLink"><span aria-hidden="true">📞</span></a>
+            <a href="#" class="venue-icon" aria-label="Location" data-i18n-attr="href:venues.0.locationLink"><span aria-hidden="true">📍</span></a>
+            <a href="#" class="venue-icon" aria-label="Website" data-i18n-attr="href:venues.0.websiteLink"><span aria-hidden="true">🌐</span></a>
+          </div>
+          <div class="venue-contact-info">
+            <p class="venue-hours" data-i18n="venues.0.hours">Часы работы</p>
+            <p class="venue-hours-note" data-i18n="venues.0.hoursNote">* Доставка и самовывоз в часы работы</p>
+          </div>
+        </div>
+        <div class="venue-gallery">
+          <img src="" alt="" data-i18n-attr="src:venues.0.photos.0;alt:venues.0.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.0.photos.1;alt:venues.0.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.0.photos.2;alt:venues.0.name" loading="lazy" width="300" height="200">
+        </div>
+      </article>
+
+      <article id="venue-haasiyati" class="venue-card" data-venue="1">
+        <h2 class="venue-name" data-i18n="venues.1.name">האסיאתי</h2>
+        <p class="venue-address" data-i18n="venues.1.address">Адрес</p>
+        <div class="venue-logo-wrap">
+          <img class="venue-logo" src="" alt="" data-i18n-attr="src:venues.1.logo;alt:venues.1.name" width="80" height="80">
+        </div>
+        <div class="venue-description-wrap">
+          <div class="venue-description-inner">
+            <p class="venue-description" data-i18n="venues.1.description">Описание ресторана.</p>
+          </div>
+          <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
+        </div>
+        <div class="venue-contact">
+          <div class="venue-contact-icons">
+            <a href="#" class="venue-icon" aria-label="Phone" data-i18n-attr="href:venues.1.phoneLink"><span aria-hidden="true">📞</span></a>
+            <a href="#" class="venue-icon" aria-label="Location" data-i18n-attr="href:venues.1.locationLink"><span aria-hidden="true">📍</span></a>
+            <a href="#" class="venue-icon" aria-label="Website" data-i18n-attr="href:venues.1.websiteLink"><span aria-hidden="true">🌐</span></a>
+          </div>
+          <div class="venue-contact-info">
+            <p class="venue-hours" data-i18n="venues.1.hours">Часы работы</p>
+            <p class="venue-hours-note" data-i18n="venues.1.hoursNote">* Доставка и самовывоз в часы работы</p>
+          </div>
+        </div>
+        <div class="venue-gallery">
+          <img src="" alt="" data-i18n-attr="src:venues.1.photos.0;alt:venues.1.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.1.photos.1;alt:venues.1.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.1.photos.2;alt:venues.1.name" loading="lazy" width="300" height="200">
+        </div>
+      </article>
+
+      <article id="venue-smash" class="venue-card" data-venue="2">
+        <h2 class="venue-name" data-i18n="venues.2.name">סמאש בורגר</h2>
+        <p class="venue-address" data-i18n="venues.2.address">Адрес</p>
+        <div class="venue-logo-wrap">
+          <img class="venue-logo" src="" alt="" data-i18n-attr="src:venues.2.logo;alt:venues.2.name" width="80" height="80">
+        </div>
+        <div class="venue-description-wrap">
+          <div class="venue-description-inner">
+            <p class="venue-description" data-i18n="venues.2.description">Описание ресторана.</p>
+          </div>
+          <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
+        </div>
+        <div class="venue-contact">
+          <div class="venue-contact-icons">
+            <a href="#" class="venue-icon" aria-label="Phone" data-i18n-attr="href:venues.2.phoneLink"><span aria-hidden="true">📞</span></a>
+            <a href="#" class="venue-icon" aria-label="Location" data-i18n-attr="href:venues.2.locationLink"><span aria-hidden="true">📍</span></a>
+            <a href="#" class="venue-icon" aria-label="Website" data-i18n-attr="href:venues.2.websiteLink"><span aria-hidden="true">🌐</span></a>
+          </div>
+          <div class="venue-contact-info">
+            <p class="venue-hours" data-i18n="venues.2.hours">Часы работы</p>
+            <p class="venue-hours-note" data-i18n="venues.2.hoursNote">* Доставка и самовывоз в часы работы</p>
+          </div>
+        </div>
+        <div class="venue-gallery">
+          <img src="" alt="" data-i18n-attr="src:venues.2.photos.0;alt:venues.2.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.2.photos.1;alt:venues.2.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.2.photos.2;alt:venues.2.name" loading="lazy" width="300" height="200">
+        </div>
+      </article>
+
+      <article id="venue-arto" class="venue-card" data-venue="3">
+        <h2 class="venue-name" data-i18n="venues.3.name">ארטו</h2>
+        <p class="venue-address" data-i18n="venues.3.address">Адрес</p>
+        <div class="venue-logo-wrap">
+          <img class="venue-logo" src="" alt="" data-i18n-attr="src:venues.3.logo;alt:venues.3.name" width="80" height="80">
+        </div>
+        <div class="venue-description-wrap">
+          <div class="venue-description-inner">
+            <p class="venue-description" data-i18n="venues.3.description">Описание ресторана.</p>
+          </div>
+          <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
+        </div>
+        <div class="venue-contact">
+          <div class="venue-contact-icons">
+            <a href="#" class="venue-icon" aria-label="Phone" data-i18n-attr="href:venues.3.phoneLink"><span aria-hidden="true">📞</span></a>
+            <a href="#" class="venue-icon" aria-label="Location" data-i18n-attr="href:venues.3.locationLink"><span aria-hidden="true">📍</span></a>
+            <a href="#" class="venue-icon" aria-label="Website" data-i18n-attr="href:venues.3.websiteLink"><span aria-hidden="true">🌐</span></a>
+          </div>
+          <div class="venue-contact-info">
+            <p class="venue-hours" data-i18n="venues.3.hours">Часы работы</p>
+            <p class="venue-hours-note" data-i18n="venues.3.hoursNote">* Доставка и самовывоз в часы работы</p>
+          </div>
+        </div>
+        <div class="venue-gallery">
+          <img src="" alt="" data-i18n-attr="src:venues.3.photos.0;alt:venues.3.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.3.photos.1;alt:venues.3.name" loading="lazy" width="300" height="200">
+          <img src="" alt="" data-i18n-attr="src:venues.3.photos.2;alt:venues.3.name" loading="lazy" width="300" height="200">
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#" data-i18n="footer.accessibility">Доступность</a>
+      <a href="#" data-i18n="footer.terms">Условия использования</a>
+      <a href="#" data-i18n="footer.privacy">Конфиденциальность</a>
+      <a href="#footer" data-i18n="footer.contact">Контакт</a>
+    </nav>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

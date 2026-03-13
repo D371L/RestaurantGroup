@@ -1,0 +1,361 @@
+/* Base */
+:root {
+  --color-bg: #faf8f5;
+  --color-card: #f0ebe3;
+  --color-card-border: #e0d9ce;
+  --color-text: #2c2c2c;
+  --color-text-muted: #5a5a5a;
+  --color-accent: #8b6914;
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --header-h: 3.5rem;
+  --container-w:  min(90vw, 960px);
+  --radius: 6px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 58vh;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #2c2c2c 0%, #4a4a4a 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-lang-wrap {
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.hero-lang-wrap .hero-lang {
+  pointer-events: auto;
+}
+
+.hero-lang {
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  width: 7rem;
+  box-sizing: border-box;
+}
+
+.lang-btn {
+  width: 2.25rem;
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lang-btn:hover,
+.lang-btn[aria-pressed="true"] {
+  background: rgba(255,255,255,0.25);
+  border-color: #fff;
+  color: #fff;
+}
+
+.hero-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+.hero-line {
+  display: block;
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.hero-line-main {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+.hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+}
+
+.hero-nav a {
+  color: #fff;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.hero-nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Venues */
+.venues {
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.venue-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  min-height: 32rem;
+}
+
+.venue-card:last-child {
+  margin-bottom: 0;
+}
+
+.venue-name {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.venue-address {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.venue-logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.venue-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-card-border);
+}
+
+.venue-description-wrap {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.venue-description-inner {
+  overflow: hidden;
+  max-height: var(--venue-description-height, 80rem);
+  transition: max-height 7s linear;
+  will-change: max-height;
+}
+
+.venue-description-wrap.is-collapsed .venue-description-inner {
+  max-height: 5.5rem;
+}
+
+.venue-description-wrap.is-collapsed .venue-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.venue-description {
+  margin: 0 auto 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  max-width: 65ch;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.venue-read-more {
+  display: inline-block;
+  margin: 0.35rem auto 0;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.venue-read-more:hover {
+  color: var(--color-text);
+}
+
+.venue-read-more[hidden] {
+  display: none !important;
+}
+
+.venue-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  background: #fff;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+}
+
+.venue-contact-icons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.venue-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-card);
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.venue-icon:hover {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+.venue-contact-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.venue-hours {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.venue-hours-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.venue-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.venue-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-card-border);
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem 1rem;
+  background: #fff;
+  border-top: 1px solid var(--color-card-border);
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  max-width: var(--container-w);
+  margin: 0 auto;
+}
+
+.footer-nav a {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.footer-nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-nav {
+    gap: 0.75rem 1rem;
+  }
+
+  .venue-contact {
+    flex-direction: column;
+  }
+
+  .venue-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-gallery img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .venue-card {
+    padding: 1.25rem;
+  }
+}
