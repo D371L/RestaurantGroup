@@ -13,23 +13,25 @@
 <body>
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-lang-wrap" dir="ltr">
-        <div class="hero-lang" aria-label="Language">
-          <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
-          <button type="button" class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      <header class="site-header">
+        <div class="hero-lang-wrap" dir="ltr">
+          <div class="hero-lang" aria-label="Language">
+            <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
+            <button type="button" class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+          </div>
         </div>
-      </div>
+        <nav class="hero-nav" aria-label="Restaurants">
+          <a href="#venue-domo" data-i18n="nav.venueDomo">דומו</a>
+          <a href="#venue-haasiyati" data-i18n="nav.venueHaasiyati">האסיאתי</a>
+          <a href="#venue-smash" data-i18n="nav.venueSmash">סמאש בורגר</a>
+          <a href="#venue-arto" data-i18n="nav.venueArto">ארטו</a>
+        </nav>
+      </header>
       <h1 id="hero-title" class="hero-title">
-        <span class="hero-line" data-i18n="hero.subtitle">Culinary Group</span>
-        <span class="hero-line hero-line-main" data-i18n="hero.title">Название группы</span>
+        <img src="logo.png" alt="Exit Group" data-i18n-attr="alt:hero.title" class="hero-logo">
       </h1>
-      <nav class="hero-nav" aria-label="Restaurants">
-        <a href="#venue-domo" data-i18n="nav.venueDomo">דומו</a>
-        <a href="#venue-haasiyati" data-i18n="nav.venueHaasiyati">האסיאתי</a>
-        <a href="#venue-smash" data-i18n="nav.venueSmash">סמאש בורגר</a>
-        <a href="#venue-arto" data-i18n="nav.venueArto">ארטו</a>
-      </nav>
     </section>
 
     <section id="venues" class="venues">

@@ -48,7 +48,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/asiati1/300/200', 'https://picsum.photos/seed/asiati2/300/200', 'https://picsum.photos/seed/asiati3/300/200']
+          photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
           name: 'סמאש בורגר',
@@ -60,7 +60,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/smash1/300/200', 'https://picsum.photos/seed/smash2/300/200', 'https://picsum.photos/seed/smash3/300/200']
+          photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
           name: 'ארטו',
@@ -72,7 +72,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/arto1/300/200', 'https://picsum.photos/seed/arto2/300/200', 'https://picsum.photos/seed/arto3/300/200']
+          photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
         }
       ],
       readMore: 'קרא עוד',
@@ -124,7 +124,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/asiati1/300/200', 'https://picsum.photos/seed/asiati2/300/200', 'https://picsum.photos/seed/asiati3/300/200']
+          photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
           name: 'Смаш Бургер',
@@ -136,7 +136,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/smash1/300/200', 'https://picsum.photos/seed/smash2/300/200', 'https://picsum.photos/seed/smash3/300/200']
+          photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
           name: 'Арто',
@@ -148,7 +148,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/arto1/300/200', 'https://picsum.photos/seed/arto2/300/200', 'https://picsum.photos/seed/arto3/300/200']
+          photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
         }
       ],
       readMore: 'Читать далее',
@@ -200,7 +200,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/asiati1/300/200', 'https://picsum.photos/seed/asiati2/300/200', 'https://picsum.photos/seed/asiati3/300/200']
+          photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
           name: 'Smash Burger',
@@ -212,7 +212,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/smash1/300/200', 'https://picsum.photos/seed/smash2/300/200', 'https://picsum.photos/seed/smash3/300/200']
+          photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
           name: 'Arto',
@@ -224,13 +224,89 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: '#',
-          photos: ['https://picsum.photos/seed/arto1/300/200', 'https://picsum.photos/seed/arto2/300/200', 'https://picsum.photos/seed/arto3/300/200']
+          photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
         }
       ],
       readMore: 'Read more',
       readLess: 'Read less',
       footer: {
         developedBy: 'Developed by '
+      }
+    },
+    ar: {
+      meta: { title: 'مجموعة الطهي' },
+      nav: {
+        orderDelivery: 'طلب توصيل',
+        bookTable: 'حجز طاولة',
+        menu: 'قائمة الطعام',
+        home: 'الرئيسية',
+        about: 'من نحن',
+        group: 'المجموعة',
+        venueDomo: 'دومو',
+        venueHaasiyati: 'الآسيوي',
+        venueSmash: 'سماش برجر',
+        venueArto: 'آرتو',
+        menus: 'قوائم الطعام',
+        contact: 'تواصل معنا'
+      },
+      hero: {
+        subtitle: 'Culinary Group',
+        title: 'مجموعة المطاعم'
+      },
+      venues: [
+        {
+          name: 'دومو',
+          address: 'العنوان، المدينة',
+          description: 'مرحباً بكم في دومو – مطعم ياباني فاخر يقدم لكم فن الضيافة اليابانية "أوموتيناشي". تم تصميم كل التفاصيل بعناية: من أفضل المكونات إلى الخدمة المثالية. دع الشيف ماتان بيل يأخذك في رحلة طهي مليئة بالامتنان والدقة والانسجام.',
+          hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
+          hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
+          logo: 'https://picsum.photos/seed/domologo/80/80',
+          phoneLink: 'tel:+972',
+          locationLink: '#',
+          websiteLink: '#',
+          photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
+        },
+        {
+          name: 'الآسيوي',
+          address: 'العنوان، المدينة',
+          description: 'الآسيوي ليس مجرد مطعم آسيوي. هنا يلتقي السوشي بطعام الشارع، والبوريتو بالرول الياباني، ويتم تحضير البوكي بول كما يجب. صلصات مدمنة تُصنع يومياً خصيصاً لتناسب كل طبق. وجبات طازجة، ملونة ومليئة بالنكهة، تقدم بسرعة ولكنها تمنحك تجربة كاملة. إذا كنت تحب الطعام، فسوف تقع في حبه هنا.',
+          hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
+          hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
+          logo: 'https://picsum.photos/seed/asiatilogo/80/80',
+          phoneLink: 'tel:+972',
+          locationLink: '#',
+          websiteLink: '#',
+          photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
+        },
+        {
+          name: 'سماش برجر',
+          address: 'العنوان، المدينة',
+          description: 'سماش برجر هو مطعم برجر شاب وجريء جلب ثقافة "سماش برجر" الأمريكية إلى حيفا والكرايوت. نحن متخصصون في الفطائر الطازجة المهروسة على الصاج الساخن للحصول على قرمشة مثالية ونكهة عميقة، مع الجبن الذائب، خبز طري ومكونات عالية الجودة. في القائمة: برجر غني، بطاطا مقرمشة، صلصات مميزة وأجواء مرحة. إذا أردت برجر حقيقي، فقد وصلت إلى المكان الصحيح.',
+          hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
+          hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
+          logo: 'https://picsum.photos/seed/smashlogo/80/80',
+          phoneLink: 'tel:+972',
+          locationLink: '#',
+          websiteLink: '#',
+          photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
+        },
+        {
+          name: 'آرتو',
+          address: 'العنوان، المدينة',
+          description: 'مطعم ومساحة للفعاليات، دانس بار راقٍ في حيفا. المكان الأكثر عصرية وجرأة. يجمع بين المأكولات الفاخرة والنادي: كوكتيلات، سُقاة، حفلات وأفضل منسقي الموسيقى. تجربة مثالية لحدثك: طعام رائع، مشروبات وأجواء مميزة. مناسب لأعياد الميلاد، حفلات البار/بات متسفا، فعاليات الشركات، الحفلات العائلية واحتفالات الحناء. سعة تتراوح بين 40 إلى 100 ضيف. حزمة شاملة - فريق الإنتاج يتولى كل شيء.',
+          hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
+          hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
+          logo: 'https://picsum.photos/seed/artologo/80/80',
+          phoneLink: 'tel:+972',
+          locationLink: '#',
+          websiteLink: '#',
+          photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
+        }
+      ],
+      readMore: 'اقرأ المزيد',
+      readLess: 'إخفاء',
+      footer: {
+        developedBy: 'تم التطوير بواسطة '
       }
     }
   };
@@ -291,8 +367,8 @@
       document.title = t.meta.title;
     }
 
-    document.documentElement.lang = currentLang === 'he' ? 'he' : currentLang === 'ru' ? 'ru' : 'en';
-    document.documentElement.dir = currentLang === 'he' ? 'rtl' : 'ltr';
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = (currentLang === 'he' || currentLang === 'ar') ? 'rtl' : 'ltr';
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
       btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === currentLang ? 'true' : 'false');
