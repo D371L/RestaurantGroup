@@ -1,28 +1,30 @@
-# Кулинарная группа — лендинг
+# Culinary Group — Landing Page
 
-Одностраничный сайт группы ресторанов в стиле Sinta Bar: шапка, переключатель языка (HE / RU / EN), четыре карточки заведений (דומו, האסיאתי, סמאש בורגר, ארטו), футер.
+A premium single-page website for a restaurant group, featuring a responsive dark-themed aesthetic. It includes a custom top header, a multi-language switcher (HE / RU / EN / AR), and four prominent venue cards (Domo, ASI ATI, Smash Burger, Arto) followed by a customized footer.
 
-## Запуск
+## Running Locally
 
-Откройте `index.html` в браузере или раздайте папку статическим сервером:
+Open `index.html` directly in your browser or serve the directory using a simple static server:
 
 ```bash
-cd website
+# Python 3
 python3 -m http.server 8000
-# или: npx serve .
+
+# Node.js
+npx serve .
 ```
 
-Откройте http://localhost:8000
+Navigate to [http://localhost:8000](http://localhost:8000).
 
-## Структура
+## Project Structure
 
-- `index.html` — разметка, секции с `data-i18n` и `data-i18n-attr`
-- `css/style.css` — сетка, карточки, типографика, адаптив
-- `css/rtl.css` — правки для иврита (RTL)
-- `js/i18n.js` — переводы (he, ru, en), переключение языка, подстановка текстов и атрибутов
-- `js/main.js` — бургер-меню, плавная прокрутка по якорям
-- `images/` — логотипы и фото заведений (пути задаются в `i18n.js`; по умолчанию используются плейсхолдеры)
+- `index.html` — The main markup, containing sections annotated with `data-i18n` and `data-i18n-attr` for dynamic translation.
+- `css/style.css` — Core styling: layout grids, typography, custom scrollbars, animations, and responsive media queries.
+- `css/rtl.css` — Right-To-Left (RTL) specific adjustments for Hebrew and Arabic layouts.
+- `js/i18n.js` — Internationalization logic and translation dictionaries (he, ru, en, ar). Handles language switching and DOM updates.
+- `js/main.js` — Core interactive logic: smooth anchor scrolling and intersection observers for scroll animations.
+- `logo.png` — Main group logo used in the hero section.
 
-## Изображения
+## Images & Media
 
-Замените в `js/i18n.js` константы `PLACEHOLDER_IMG` и `PLACEHOLDER_LOGO` или задайте для каждого заведения в `venues[i]` поля `logo` и `photos` (массив из 3 URL). Локальные файлы положите в `images/` и укажите пути вида `images/domo-1.jpg`.
+To update the placeholder images, modify the `PLACEHOLDER_IMG` constants within `js/i18n.js`. For specific venue imagery, supply valid URLs to the `logo` and `photos` array fields defined inside the `venues` translation dictionaries. Local files should ideally be placed in an `images/` directory.

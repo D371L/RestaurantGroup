@@ -312,7 +312,24 @@
   };
 
   var STORAGE_KEY = 'site-lang';
-  var currentLang = 'ru';
+  
+  function getDefaultLanguage() {
+    var saved = localStorage.getItem(STORAGE_KEY);
+    var supportedLangs = ['ru', 'he', 'en', 'ar'];
+    
+    if (saved && supportedLangs.indexOf(saved) !== -1) {
+      return saved;
+    }
+    
+    var browserLang = (navigator.language || navigator.userLanguage).slice(0, 2).toLowerCase();
+    if (supportedLangs.indexOf(browserLang) !== -1) {
+      return browserLang;
+    }
+    
+    return 'en'; // default fallback for unsupported languages
+  }
+
+  var currentLang = getDefaultLanguage();
 
   function getByPath(obj, path) {
     var parts = path.split('.');
