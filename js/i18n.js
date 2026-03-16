@@ -28,50 +28,54 @@
       venues: [
         {
           name: 'דומו',
-          address: 'כתובת, עיר',
+          address: 'אחי אילת 69, חיפה',
+          addresses: ['אחי אילת 69, חיפה'],
           description: 'ברוכים הבאים לDOMO – מסעדת יוקרה יפנית שמביאה לכם את אומנות האירוח היפני, \'אומוטנאשי\' (おもてなし). אצלנו, כל פרט מחושב בקפידה – מחומרי הגלם המשובחים ועד השירות המושלם.\n\nתנו לנו לקחת אתכם בהובלת הסושי-שף מתן בל למסע קולינרי מלא הכרת תודה, דיוק והרמוניה.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: 'https://picsum.photos/seed/domologo/80/80',
+          logo: 'Domo/domo_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
           photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
         },
         {
           name: 'האסיאתי',
-          address: 'כתובת, עיר',
+          address: 'אחי אילת 69, חיפה | קדושי יאסי 2, חיפה',
+          addresses: ['אחי אילת 69, חיפה', 'קדושי יאסי 2, חיפה'],
           description: 'האסיאתי היא לא עוד מסעדה אסייתית. זה המקום שבו סושי פוגש סטריט-פוד, בוריטו פוגש רול יפני, ופוקה בול נבנה בדיוק כמו שצריך.\n\nרטבים ממכרים שמוכנים כל יום, ונבנו במיוחד בשביל שילוב מושלם עם המנות. מנות טריות, צבעוניות ומלאות בטעם, שמגיעות מהר, אבל מרגישות כמו חוויה.\n\nאז… אם אתם אוהבים אוכל, אתם הולכים להתאהב.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: 'https://picsum.photos/seed/asiatilogo/80/80',
+          logo: 'ASI ATI/asiati_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/asi___ati/',
           photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
           name: 'סמאש בורגר',
-          address: 'כתובת, עיר',
+          address: 'נתנזון 9, חיפה | קדושי יאסי 2, חיפה | אחי אילת 69, חיפה',
+          addresses: ['נתנזון 9, חיפה', 'קדושי יאסי 2, חיפה', 'אחי אילת 69, חיפה'],
           description: 'סמאש בורגר היא המבורגרייה צעירה ושובבה שמביאה את תרבות ה־Smash Burger האמריקאית לחיפה ולקריות. אנחנו מתמחים בקציצות טריות שנמעכות על הפלנצ\'ה הלוהטת לקבלת קריספיות מושלמת וטעם עמוק, עם גבינה נמסה, לחמניות רכות וחומרי גלם איכותיים.\n\nבתפריט תמצאו המבורגרים מושחתים, צ\'יפס קריספי, רטבים מיוחדים ואווירה שמחה וקלילה. אם באתם לאכול המבורגר טוב באמת – הגעתם למקום הנכון.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: 'https://picsum.photos/seed/smashlogo/80/80',
+          logo: 'Smash Burger/smashburger_logo.jpg',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
           name: 'ארטו',
-          address: 'כתובת, עיר',
+          address: 'קדושי יאסי 2, חיפה',
+          addresses: ['קדושי יאסי 2, חיפה'],
           description: 'מסעדה ומתחם אירועים, דאנס בר יוקרתי לאירועים\nבחיפה. המקום הכי עכשווי, בועט וייחודי שתפגשו.\n\nהמקום משלב בין מטבח יוקרתי, פיוז\'ן לבין מועדון עם קוקטיילים וברמנים, מסיבה ודיג\'יים הכי טובים שיש.\n\nהמקום הוא השילוב המושלם לאירוע\nגם אוכל, גם אלכוהול וגם מסיבה מושלמת.\n\nהמקום מושלם לימי הולדת, מסיבות ברית, מסיבות בר מצווה, חינה יוקרתית, בת מצווה, אירוע משפחתי, אירועי חברה למינהם כגון מסיבות פורים, אירועי קונספט משובחים ואירועים עם אווירה אחרת.\n\nהמקום נועד לאירועים מ40 איש ועד 100 איש\n\nהמקום ידאג לתת לכם את המעטפת המושלמת, עסקת חבילה מלאה, לא תצטרכו להביא כלום מהבית וכל הדרך ידאגו אנשי ההפקה לכל הצרכים שלכם.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
-          logo: 'https://picsum.photos/seed/artologo/80/80',
+          logo: 'Arto/arto_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/arto_taste_above_everything/',
           photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
         }
       ],
@@ -104,50 +108,54 @@
       venues: [
         {
           name: 'Домо',
-          address: 'Адрес, город',
+          address: 'אחי אילת 69, חיפה',
+          addresses: ['אחי אילת 69, חיפה'],
           description: 'Добро пожаловать в DOMO — японский ресторан премиум-класса, где царит искусство японского гостеприимства «омотэнаси». Каждая деталь продумана: от отборных продуктов до безупречного сервиса. Сусхи-шеф Матан Бел проведёт вас в кулинарное путешествие, полное благодарности, точности и гармонии.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: 'https://picsum.photos/seed/domologo/80/80',
+          logo: 'Domo/domo_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
           photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
         },
         {
           name: 'ASI ATI',
-          address: 'Адрес, город',
+          address: 'אחי אילת 69, חיפה | קדושי יאסי 2, חיפה',
+          addresses: ['אחי אילת 69, חיפה', 'קדושי יאסי 2, חיפה'],
           description: 'ASI ATI — это не просто азиатский ресторан. Здесь суши встречается со стрит-фудом, буррито — с японским роллом, а поке-боул собран как надо. Соусы готовят каждый день специально под блюда. Свежие, яркие, насыщенные вкусом порции приходят быстро, но ощущаются как полноценный опыт. Любите еду — здесь вы влюбитесь.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: 'https://picsum.photos/seed/asiatilogo/80/80',
+          logo: 'ASI ATI/asiati_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/asi___ati/',
           photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
           name: 'Смаш Бургер',
-          address: 'Адрес, город',
+          address: 'נתנזון 9, חיפה | קדושי יאסי 2, חיפה | אחי אילת 69, חיפה',
+          addresses: ['נתנזון 9, חיפה', 'קדושי יאסי 2, חיפה', 'אחי אילת 69, חיפה'],
           description: 'Смаш Бургер — молодой и дерзкий бургерный, привёзший американскую культуру smash burger в Хайфу и Крайот. Свежие котлеты обжаривают на раскалённой плитке для хруста и глубокого вкуса, с расплавленным сыром, мягкими булками и качественными продуктами. В меню — сытные бургеры, хрустящий картофель, фирменные соусы и лёгкая весёлая атмосфера. Хотите по-настоящему хороший бургер — вы по адресу.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: 'https://picsum.photos/seed/smashlogo/80/80',
+          logo: 'Smash Burger/smashburger_logo.jpg',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
           name: 'Арто',
-          address: 'Адрес, город',
+          address: 'קדושי יאסי 2, חיפה',
+          addresses: ['קדושי יאסי 2, חיפה'],
           description: 'Ресторан и площадка для мероприятий, премиальный данс-бар в Хайфе. Самое современное, дерзкое и особенное место. Сочетание высокой кухни фьюжн с клубом: коктейли, бармены, вечеринки и топовые диджеи. Идеальный формат мероприятия: кухня, бар и отличная вечеринка. Подходит для дней рождения, бар-мицвы, хупы, бат-мицвы, семейных и корпоративных праздников, тематических вечеринок. Вместимость 40–100 гостей. Полный пакет услуг — ничего не нужно приносить, продюсерская команда берёт всё на себя.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
-          logo: 'https://picsum.photos/seed/artologo/80/80',
+          logo: 'Arto/arto_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/arto_taste_above_everything/',
           photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
         }
       ],
@@ -180,50 +188,54 @@
       venues: [
         {
           name: 'Domo',
-          address: 'Address, City',
+          address: 'Ahhei Eilat 69, Haifa',
+          addresses: ['Ahhei Eilat 69, Haifa'],
           description: 'Welcome to DOMO — a premium Japanese restaurant bringing you the art of Japanese hospitality, Omotenashi. Every detail is considered, from the finest ingredients to flawless service. Let sushi-chef Matan Bel take you on a culinary journey of gratitude, precision and harmony.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: 'https://picsum.photos/seed/domologo/80/80',
+          logo: 'Domo/domo_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
           photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
         },
         {
           name: 'ASI ATI',
-          address: 'Address, City',
+          address: 'Ahhei Eilat 69, Haifa | Kedoshei Yasi 2, Haifa',
+          addresses: ['Ahhei Eilat 69, Haifa', 'Kedoshei Yasi 2, Haifa'],
           description: 'ASI ATI is not just another Asian restaurant. It\'s where sushi meets street food, burrito meets Japanese roll, and poke bowls are done right. Addictive sauces made daily, built for the perfect match with each dish. Fresh, colorful, full of flavor — served fast but it feels like an experience. If you love food, you\'re going to love it here.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: 'https://picsum.photos/seed/asiatilogo/80/80',
+          logo: 'ASI ATI/asiati_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/asi___ati/',
           photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
           name: 'Smash Burger',
-          address: 'Address, City',
+          address: 'Netivson 9, Haifa | Kedoshei Yasi 2, Haifa | Ahhei Eilat 69, Haifa',
+          addresses: ['Netivson 9, Haifa', 'Kedoshei Yasi 2, Haifa', 'Ahhei Eilat 69, Haifa'],
           description: 'Smash Burger is the young, playful burger joint that brought American Smash Burger culture to Haifa and the Krayot. We specialize in fresh patties smashed on the hot griddle for perfect crisp and deep flavor — melted cheese, soft buns, quality ingredients. On the menu: indulgent burgers, crispy fries, special sauces, and a happy, laid-back vibe. If you came for a really good burger, you\'re in the right place.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: 'https://picsum.photos/seed/smashlogo/80/80',
+          logo: 'Smash Burger/smashburger_logo.jpg',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
           name: 'Arto',
-          address: 'Address, City',
+          address: 'Kedoshei Yasi 2, Haifa',
+          addresses: ['Kedoshei Yasi 2, Haifa'],
           description: 'Restaurant and event venue — a premium dance bar for events in Haifa. The most contemporary, bold and unique place you\'ll find. It combines upscale fusion cuisine with a club: cocktails, bartenders, parties and top DJs. The perfect mix for your event: great food, drinks and a great party. Ideal for birthdays, bar mitzvahs, henna celebrations, bat mitzvahs, family and corporate events, theme parties. For events from 40 to 100 guests. Full package — you don\'t need to bring a thing; the production team takes care of everything.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
-          logo: 'https://picsum.photos/seed/artologo/80/80',
+          logo: 'Arto/arto_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/arto_taste_above_everything/',
           photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
         }
       ],
@@ -256,50 +268,50 @@
       venues: [
         {
           name: 'دومو',
-          address: 'العنوان، المدينة',
+          address: 'אחי אילת 69, חיפה',
           description: 'مرحباً بكم في دومو – مطعم ياباني فاخر يقدم لكم فن الضيافة اليابانية "أوموتيناشي". تم تصميم كل التفاصيل بعناية: من أفضل المكونات إلى الخدمة المثالية. دع الشيف ماتان بيل يأخذك في رحلة طهي مليئة بالامتنان والدقة والانسجام.',
           hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
           hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
           logo: 'https://picsum.photos/seed/domologo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
           photos: ['https://picsum.photos/seed/domo1/300/200', 'https://picsum.photos/seed/domo2/300/200', 'https://picsum.photos/seed/domo3/300/200']
         },
         {
           name: 'الآسيوي',
-          address: 'العنوان، المدينة',
+          address: 'אחי אילת 69, חיפה | קדושי יאסי 2, חיפה',
           description: 'الآسيوي ليس مجرد مطعم آسيوي. هنا يلتقي السوشي بطعام الشارع، والبوريتو بالرول الياباني، ويتم تحضير البوكي بول كما يجب. صلصات مدمنة تُصنع يومياً خصيصاً لتناسب كل طبق. وجبات طازجة، ملونة ومليئة بالنكهة، تقدم بسرعة ولكنها تمنحك تجربة كاملة. إذا كنت تحب الطعام، فسوف تقع في حبه هنا.',
           hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
           hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
           logo: 'https://picsum.photos/seed/asiatilogo/80/80',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/asi___ati/',
           photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
           name: 'سماش برجر',
-          address: 'العنوان، المدينة',
+          address: 'נתנזון 9, חיפה | קדושי יאסי 2, חיפה | אחי אילת 69, חיפה',
           description: 'سماش برجر هو مطعم برجر شاب وجريء جلب ثقافة "سماش برجر" الأمريكية إلى حيفا والكرايوت. نحن متخصصون في الفطائر الطازجة المهروسة على الصاج الساخن للحصول على قرمشة مثالية ونكهة عميقة، مع الجبن الذائب، خبز طري ومكونات عالية الجودة. في القائمة: برجر غني، بطاطا مقرمشة، صلصات مميزة وأجواء مرحة. إذا أردت برجر حقيقي، فقد وصلت إلى المكان الصحيح.',
           hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
           hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
-          logo: 'https://picsum.photos/seed/smashlogo/80/80',
+          logo: 'Smash Burger/smashburger_logo.jpg',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
           name: 'آرتو',
-          address: 'العنوان، المدينة',
+          address: 'קדושי יאסי 2, חיפה',
           description: 'مطعم ومساحة للفعاليات، دانس بار راقٍ في حيفا. المكان الأكثر عصرية وجرأة. يجمع بين المأكولات الفاخرة والنادي: كوكتيلات، سُقاة، حفلات وأفضل منسقي الموسيقى. تجربة مثالية لحدثك: طعام رائع، مشروبات وأجواء مميزة. مناسب لأعياد الميلاد، حفلات البار/بات متسفا، فعاليات الشركات، الحفلات العائلية واحتفالات الحناء. سعة تتراوح بين 40 إلى 100 ضيف. حزمة شاملة - فريق الإنتاج يتولى كل شيء.',
           hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
           hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
-          logo: 'https://picsum.photos/seed/artologo/80/80',
+          logo: 'Arto/arto_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
-          websiteLink: '#',
+          websiteLink: 'https://www.instagram.com/arto_taste_above_everything/',
           photos: ['img/venues/arto-1.webp', 'img/venues/arto-2.webp', 'img/venues/arto-3.webp']
         }
       ],
@@ -392,6 +404,7 @@
     });
 
     if (window.setupVenueReadMore) window.setupVenueReadMore();
+    if (window.setupVenueAddresses) window.setupVenueAddresses();
   }
 
   function setLang(lang) {
@@ -430,5 +443,20 @@
     return getByPath(translations[currentLang], key);
   }
 
-  window.i18n = { setLang: setLang, getLang: function () { return currentLang; }, getTranslation: getTranslation };
+  function getVenueAddresses(index) {
+    var t = translations[currentLang];
+    if (!t || !t.venues || !t.venues[index]) return [];
+    var venue = t.venues[index];
+    if (Array.isArray(venue.addresses) && venue.addresses.length) {
+      return venue.addresses;
+    }
+    return venue.address ? [venue.address] : [];
+  }
+
+  window.i18n = {
+    setLang: setLang,
+    getLang: function () { return currentLang; },
+    getTranslation: getTranslation,
+    getVenueAddresses: getVenueAddresses
+  };
 })();

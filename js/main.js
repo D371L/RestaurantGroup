@@ -82,9 +82,62 @@
     });
   }
 
+  function hidePageLoader() {
+    var loader = document.getElementById('page-loader');
+    if (!loader) return;
+
+    setTimeout(function () {
+      loader.classList.add('is-hidden');
+      setTimeout(function () {
+        if (loader && loader.parentNode) {
+          loader.parentNode.removeChild(loader);
+        }
+      }, 600);
+    }, 1000);
+  }
+
+  function setupVenueAddresses() {
+    if (!window.i18n || !window.i18n.getVenueAddresses) return;
+
+    document.querySelectorAll('.venue-card').forEach(function (card) {
+      var index = parseInt(card.getAttribute('data-venue'), 10);
+      if (isNaN(index)) return;
+
+      var addresses = window.i18n.getVenueAddresses(index);
+      var addrEl = card.querySelector('.venue-address');
+      if (!addrEl || !addresses || !addresses.length) return;
+
+      addrEl.textContent = '';
+
+      addresses.forEach(function (addr) {
+        var pill = document.createElement('span');
+        pill.className = 'venue-address-pill';
+        pill.textContent = addr;
+        addrEl.appendChild(pill);
+      });
+    });
+  }
+
+  function setupHeroScrollArrow() {
+    var btn = document.querySelector('.hero-scroll-down');
+    if (!btn) return;
+
+    var targetSelector = btn.getAttribute('data-target') || '#venues';
+    var target = document.querySelector(targetSelector);
+
+    if (!target) return;
+
+    btn.addEventListener('click', function () {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
   function init() {
     setupVenueReadMore();
     setupScrollReveal();
+    setupVenueAddresses();
+    setupHeroScrollArrow();
+    hidePageLoader();
   }
 
   if (document.readyState === 'loading') {
@@ -94,4 +147,5 @@
   }
 
   window.setupVenueReadMore = setupVenueReadMore;
+  window.setupVenueAddresses = setupVenueAddresses;
 })();
