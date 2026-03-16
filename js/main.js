@@ -33,11 +33,19 @@
 
       // Ensure full content is visible for accurate height measurement
       wrap.classList.remove('is-collapsed');
+      wrap.classList.remove('is-clamped');
 
       // Measure full content height and store in CSS variable
       var fullHeight = inner.scrollHeight;
       if (fullHeight && fullHeight > 0) {
         wrap.style.setProperty('--venue-description-height', fullHeight + 'px');
+      }
+
+      // Store collapsed (2-line) height for smooth animation
+      var cs = window.getComputedStyle(desc);
+      var lineHeight = parseFloat(cs.lineHeight);
+      if (!isNaN(lineHeight) && lineHeight > 0) {
+        wrap.style.setProperty('--venue-description-collapsed-height', (lineHeight * 2 + 2) + 'px');
       }
 
       var fullText = desc.textContent || '';
@@ -52,12 +60,50 @@
 
       if (needsButton) {
         wrap.classList.add('is-collapsed');
+        wrap.classList.add('is-clamped');
         btn.textContent = getLabel('readMore');
         btn.onclick = function () {
           var collapsed = wrap.classList.contains('is-collapsed');
-          wrap.classList.toggle('is-collapsed', !collapsed);
-          btn.textContent = collapsed ? getLabel('readLess') : getLabel('readMore');
-          btn.setAttribute('aria-expanded', collapsed ? 'true' : 'false');
+          if (collapsed) {
+            // Expand: unclamp immediately, then animate to full height
+            wrap.classList.remove('is-clamped');
+            wrap.classList.remove('is-collapsed');
+
+            // Update full height after unclamping (needed for first click)
+            var expandedH = inner.scrollHeight;
+            if (expandedH && expandedH > 0) {
+              wrap.style.setProperty('--venue-description-height', expandedH + 'px');
+            }
+
+            btn.textContent = getLabel('readLess');
+            btn.setAttribute('aria-expanded', 'true');
+            return;
+          }
+
+          // Collapse: animate height first, clamp only after transition ends
+          wrap.classList.remove('is-clamped');
+
+          // Ensure we're starting from full height for a smooth collapse animation
+          var fullH = inner.scrollHeight;
+          if (fullH && fullH > 0) {
+            wrap.style.setProperty('--venue-description-height', fullH + 'px');
+          }
+
+          // Force reflow so the browser acknowledges the starting height
+          void inner.offsetHeight;
+
+          wrap.classList.add('is-collapsed');
+          btn.textContent = getLabel('readMore');
+          btn.setAttribute('aria-expanded', 'false');
+
+          var onEnd = function (e) {
+            if (e && e.target !== inner) return;
+            inner.removeEventListener('transitionend', onEnd);
+            if (wrap.classList.contains('is-collapsed')) {
+              wrap.classList.add('is-clamped');
+            }
+          };
+          inner.addEventListener('transitionend', onEnd);
         };
       } else {
         btn.setAttribute('hidden', '');
@@ -77,8 +123,8 @@
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll('.venue-card').forEach(function(card) {
-      observer.observe(card);
+    document.querySelectorAll('.venue-card, .group-intro').forEach(function(el) {
+      observer.observe(el);
     });
   }
 

@@ -25,12 +25,18 @@
         subtitle: 'Culinary Group',
         title: 'קבוצת המסעדות'
       },
+      group: {
+        intro: {
+          title: 'EXIT GROUP - הקבוצה הקולינרית',
+          text: 'לפני עשור הגענו כדי להרים את הווליום, ומאז אנחנו פשוט מסרבים להנמיך. זה התחיל עם ה״ארטו״, הלב הפועם שחיבר בין קולינריה גבוהה לאווירה בועטת, והמשיך במסע של תעוזה שבו שברנו את המוסכמות של עצמנו בכל פעם מחדש. מה״סמאש בורגר״ שהביא את השחיתות האמריקאית לשיא בשיא הקורונה, דרך הדיוק והאיפוק המהפנט של ״דומו״ ועד הסטריט-פוד הממזר של ASI ATI.\n\nאנחנו לא רק פותחים מסעדות, אנחנו יוצרים תרבות. אנחנו כאן כדי להתרגש, לחדש ולהוכיח שאפשר להגיש יוקרה עם קריצה, ואיכות ללא פשרות עם המון חוצפה. לא באנו רק כדי להישאר - באנו כדי להגדיר מחדש את הטעם שלכם.'
+        }
+      },
       venues: [
         {
           name: 'דומו',
           address: 'אחי אילת 69, חיפה',
           addresses: ['אחי אילת 69, חיפה'],
-          description: 'ברוכים הבאים לDOMO – מסעדת יוקרה יפנית שמביאה לכם את אומנות האירוח היפני, \'אומוטנאשי\' (おもてなし). אצלנו, כל פרט מחושב בקפידה – מחומרי הגלם המשובחים ועד השירות המושלם.\n\nתנו לנו לקחת אתכם בהובלת הסושי-שף מתן בל למסע קולינרי מלא הכרת תודה, דיוק והרמוניה.',
+          description: 'ברוכים הבאים ל-DOMO, המקום שבו הדיוק היפני פוגש את החוצפה הישראלית בלוקיישן הכי מפתיע על המפה. לא באנו לעשות "עוד סושי" - באנו להקים מקדש קולינרי שבו כל חיתוך של להב הוא הצהרה, וכל מנה היא יצירת אמנות חסרת פשרות.\n\nאנחנו לוקחים את ה\'אומוטנאשי\' (Omotenashi) - אמנות האירוח היפנית - ומזקקים אותה לחוויה סקסית, אפלולית וממכרת שגורמת לכם לשכוח כל מה שחשבתם על המזרח הרחוק. חומרי הגלם הכי נדירים, טכניקות מסורתיות ופרזנטציה שפשוט אי אפשר להישאר אדישים אליה. ב-DOMO אנחנו לא מחפשים אישורים, אנחנו קובעים את הסטנדרט.',
           hours: 'שעות פעילות: א׳-ה׳ 12:00–23:30 | ו׳-ש׳ 12:00–00:00',
           hoursNote: '* משלוחים וטייק אווי פועלים לאורך כל שעות הפעילות',
           logo: 'Domo/domo_logo.png',
@@ -105,12 +111,18 @@
         subtitle: 'Culinary Group',
         title: 'Кулинарная группа'
       },
+      group: {
+        intro: {
+          title: 'О EXIT GROUP',
+          text: 'Десять лет назад мы пришли, чтобы поднять громкость, и с тех пор просто отказываемся убавлять звук. Всё началось с «Арто» - пульсирующего сердца, которое соединило высокую гастрономию с дерзкой клубной атмосферой, и продолжилось путешествием смелых решений, где мы каждый раз ломали собственные рамки. От Smash Burger, который в разгар ковида довёл американский фастфуд до уровня культа, через гипнотическую точность и сдержанность DOMO, и до хитрого стрит-фуда ASI ATI.\n\nМы не просто открываем рестораны - мы создаём культуру. Мы здесь, чтобы волновать, удивлять и снова изобретать, как может выглядеть премиум с улыбкой и дерзостью. Безупречное качество, никакого компромисса и много характера. Мы пришли не просто задержаться - мы здесь, чтобы заново определить ваш вкус.'
+        }
+      },
       venues: [
         {
           name: 'Домо',
           address: 'אחי אילת 69, חיפה',
           addresses: ['אחי אילת 69, חיפה'],
-          description: 'Добро пожаловать в DOMO — японский ресторан премиум-класса, где царит искусство японского гостеприимства «омотэнаси». Каждая деталь продумана: от отборных продуктов до безупречного сервиса. Сусхи-шеф Матан Бел проведёт вас в кулинарное путешествие, полное благодарности, точности и гармонии.',
+          description: 'Добро пожаловать в DOMO - место, где японская точность встречается с израильской дерзостью в самом неожиданном уголке карты. Мы здесь не для того, чтобы делать «ещё немного суши» - мы создаём кулинарный храм, где каждый взмах ножа - это манифест, а каждое блюдо - бескомпромиссное произведение искусства.\n\nМы берём японскую философию гостеприимства «омотэнаси» (Omotenashi) и превращаем её в тёмный, притягательный и немного опасный опыт, после которого вы забудете всё, что знали о Дальнем Востоке. Редкие продукты, традиционные техники и подача, мимо которой невозможно пройти равнодушно. В DOMO мы не ищем одобрения - мы задаём стандарт.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
           logo: 'Domo/domo_logo.png',
@@ -123,7 +135,7 @@
           name: 'ASI ATI',
           address: 'אחי אילת 69, חיפה | קדושי יאסי 2, חיפה',
           addresses: ['אחי אילת 69, חיפה', 'קדושי יאסי 2, חיפה'],
-          description: 'ASI ATI — это не просто азиатский ресторан. Здесь суши встречается со стрит-фудом, буррито — с японским роллом, а поке-боул собран как надо. Соусы готовят каждый день специально под блюда. Свежие, яркие, насыщенные вкусом порции приходят быстро, но ощущаются как полноценный опыт. Любите еду — здесь вы влюбитесь.',
+          description: 'ASI ATI - это не просто азиатский ресторан. Здесь суши встречается со стрит-фудом, буррито - с японским роллом, а поке-боул собран как надо. Соусы готовят каждый день специально под блюда. Свежие, яркие, насыщенные вкусом порции приходят быстро, но ощущаются как полноценный опыт. Любите еду - здесь вы влюбитесь.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
           logo: 'ASI ATI/asiati_logo.png',
@@ -136,7 +148,7 @@
           name: 'Смаш Бургер',
           address: 'נתנזון 9, חיפה | קדושי יאסי 2, חיפה | אחי אילת 69, חיפה',
           addresses: ['נתנזון 9, חיפה', 'קדושי יאסי 2, חיפה', 'אחי אילת 69, חיפה'],
-          description: 'Смаш Бургер — молодой и дерзкий бургерный, привёзший американскую культуру smash burger в Хайфу и Крайот. Свежие котлеты обжаривают на раскалённой плитке для хруста и глубокого вкуса, с расплавленным сыром, мягкими булками и качественными продуктами. В меню — сытные бургеры, хрустящий картофель, фирменные соусы и лёгкая весёлая атмосфера. Хотите по-настоящему хороший бургер — вы по адресу.',
+          description: 'Смаш Бургер - молодой и дерзкий бургерный, привёзший американскую культуру smash burger в Хайфу и Крайот. Свежие котлеты обжаривают на раскалённой плитке для хруста и глубокого вкуса, с расплавленным сыром, мягкими булками и качественными продуктами. В меню - сытные бургеры, хрустящий картофель, фирменные соусы и лёгкая весёлая атмосфера. Хотите по-настоящему хороший бургер - вы по адресу.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
           logo: 'Smash Burger/smashburger_logo.jpg',
@@ -149,7 +161,7 @@
           name: 'Арто',
           address: 'קדושי יאסי 2, חיפה',
           addresses: ['קדושי יאסי 2, חיפה'],
-          description: 'Ресторан и площадка для мероприятий, премиальный данс-бар в Хайфе. Самое современное, дерзкое и особенное место. Сочетание высокой кухни фьюжн с клубом: коктейли, бармены, вечеринки и топовые диджеи. Идеальный формат мероприятия: кухня, бар и отличная вечеринка. Подходит для дней рождения, бар-мицвы, хупы, бат-мицвы, семейных и корпоративных праздников, тематических вечеринок. Вместимость 40–100 гостей. Полный пакет услуг — ничего не нужно приносить, продюсерская команда берёт всё на себя.',
+          description: 'Ресторан и площадка для мероприятий, премиальный данс-бар в Хайфе. Самое современное, дерзкое и особенное место. Сочетание высокой кухни фьюжн с клубом: коктейли, бармены, вечеринки и топовые диджеи. Идеальный формат мероприятия: кухня, бар и отличная вечеринка. Подходит для дней рождения, бар-мицвы, хупы, бат-мицвы, семейных и корпоративных праздников, тематических вечеринок. Вместимость 40–100 гостей. Полный пакет услуг - ничего не нужно приносить, продюсерская команда берёт всё на себя.',
           hours: 'Часы работы: Вс–Чт 12:00–23:30 | Пт–Сб 12:00–00:00',
           hoursNote: '* Доставка и самовывоз в часы работы',
           logo: 'Arto/arto_logo.png',
@@ -185,12 +197,18 @@
         subtitle: 'Culinary Group',
         title: 'Restaurant Group'
       },
+      group: {
+        intro: {
+          title: 'About EXIT GROUP',
+          text: 'A decade ago we came in to turn the volume up - and we still refuse to turn it down. It started with Arto, the beating heart that fused high-end cuisine with a kicking nightlife vibe, and grew into a journey of bold moves where we kept breaking our own rules. From Smash Burger, which pushed American indulgence to the max right in the middle of COVID, through the hypnotic precision and restraint of Domo, all the way to the street-smart attitude of ASI ATI.\n\nWe don’t just open restaurants - we build culture. We’re here to get excited, to reinvent, and to prove that you can serve luxury with a wink and uncompromising quality with plenty of attitude. We didn’t come just to stay - we came to redefine your taste.'
+        }
+      },
       venues: [
         {
           name: 'Domo',
           address: 'Ahhei Eilat 69, Haifa',
           addresses: ['Ahhei Eilat 69, Haifa'],
-          description: 'Welcome to DOMO — a premium Japanese restaurant bringing you the art of Japanese hospitality, Omotenashi. Every detail is considered, from the finest ingredients to flawless service. Let sushi-chef Matan Bel take you on a culinary journey of gratitude, precision and harmony.',
+          description: 'Welcome to DOMO - where Japanese precision collides with Israeli boldness in one of the most unexpected spots on the map. We didn\'t come here to do “just another sushi place” - we came to build a culinary temple where every slice of the blade is a statement, and every dish is a piece of uncompromising art.\n\nWe take the Japanese art of hospitality, Omotenashi, and distill it into a dark, sensual, addictive experience that makes you forget everything you thought you knew about the Far East. The rarest ingredients, traditional techniques, and plating you simply can\'t ignore. At DOMO we\'re not looking for approval - we set the standard.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
           logo: 'Domo/domo_logo.png',
@@ -216,7 +234,7 @@
           name: 'Smash Burger',
           address: 'Netivson 9, Haifa | Kedoshei Yasi 2, Haifa | Ahhei Eilat 69, Haifa',
           addresses: ['Netivson 9, Haifa', 'Kedoshei Yasi 2, Haifa', 'Ahhei Eilat 69, Haifa'],
-          description: 'Smash Burger is the young, playful burger joint that brought American Smash Burger culture to Haifa and the Krayot. We specialize in fresh patties smashed on the hot griddle for perfect crisp and deep flavor — melted cheese, soft buns, quality ingredients. On the menu: indulgent burgers, crispy fries, special sauces, and a happy, laid-back vibe. If you came for a really good burger, you\'re in the right place.',
+          description: 'Smash Burger is the young, playful burger joint that brought American Smash Burger culture to Haifa and the Krayot. We specialize in fresh patties smashed on the hot griddle for perfect crisp and deep flavor - melted cheese, soft buns, quality ingredients. On the menu: indulgent burgers, crispy fries, special sauces, and a happy, laid-back vibe. If you came for a really good burger, you\'re in the right place.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
           logo: 'Smash Burger/smashburger_logo.jpg',
@@ -229,7 +247,7 @@
           name: 'Arto',
           address: 'Kedoshei Yasi 2, Haifa',
           addresses: ['Kedoshei Yasi 2, Haifa'],
-          description: 'Restaurant and event venue — a premium dance bar for events in Haifa. The most contemporary, bold and unique place you\'ll find. It combines upscale fusion cuisine with a club: cocktails, bartenders, parties and top DJs. The perfect mix for your event: great food, drinks and a great party. Ideal for birthdays, bar mitzvahs, henna celebrations, bat mitzvahs, family and corporate events, theme parties. For events from 40 to 100 guests. Full package — you don\'t need to bring a thing; the production team takes care of everything.',
+          description: 'Restaurant and event venue - a premium dance bar for events in Haifa. The most contemporary, bold and unique place you\'ll find. It combines upscale fusion cuisine with a club: cocktails, bartenders, parties and top DJs. The perfect mix for your event: great food, drinks and a great party. Ideal for birthdays, bar mitzvahs, henna celebrations, bat mitzvahs, family and corporate events, theme parties. For events from 40 to 100 guests. Full package - you don\'t need to bring a thing; the production team takes care of everything.',
           hours: 'Hours: Sun–Thu 12:00–23:30 | Fri–Sat 12:00–00:00',
           hoursNote: '* Delivery and takeaway during opening hours',
           logo: 'Arto/arto_logo.png',
@@ -265,14 +283,21 @@
         subtitle: 'Culinary Group',
         title: 'مجموعة المطاعم'
       },
+      group: {
+        intro: {
+          title: 'حول EXIT GROUP',
+          text: 'منذ عقد جئنا لنرفع مستوى الصوت، ومنذ ذلك الحين نرفض أن نُخفّضه. بدأت الرحلة مع \"آرتو\"، القلب النابض الذي جمع بين المطبخ الراقي والأجواء الجريئة، واستمرت بمسار من الجرأة كسرنا فيه قواعدنا في كل مرة من جديد. من Smash Burger الذي جلب أقصى درجات الانغماس الأمريكي في ذروة الكورونا، مروراً بالدقة والهدوء الآسر في DOMO، وصولاً إلى ستريت فود مشاغب يحمل توقيع ASI ATI.\n\nنحن لا نفتح مطاعم فحسب، بل نصنع ثقافة. نحن هنا لنُشعل الحماس، نبتكر من جديد، ونُثبت أنه يمكن تقديم الفخامة بروح مرحة، وجودة بلا أي تنازل مع الكثير من الجرأة. لم نأتِ فقط لنكون جزءاً من المشهد - جئنا لنُعيد تعريف ذائقتكم.'
+        }
+      },
       venues: [
         {
           name: 'دومو',
           address: 'אחי אילת 69, חיפה',
-          description: 'مرحباً بكم في دومو – مطعم ياباني فاخر يقدم لكم فن الضيافة اليابانية "أوموتيناشي". تم تصميم كل التفاصيل بعناية: من أفضل المكونات إلى الخدمة المثالية. دع الشيف ماتان بيل يأخذك في رحلة طهي مليئة بالامتنان والدقة والانسجام.',
+          addresses: ['אחי אילת 69, חיפה'],
+          description: 'مرحباً بكم في DOMO، حيث يلتقي الانضباط الياباني بالجرأة الإسرائيلية في أكثر موقع مفاجئ على الخريطة. لم نأتِ لنقدّم "سوشي عادي" - جئنا لنقيم معبداً طهويّاً يكون فيه كل قَطْع للسكين تصريحاً، وكل طبق عملاً فنياً بلا تنازلات.\n\nنأخذ فلسفة الضيافة اليابانية "أوموتيناشي" (Omotenashi) ونقطّرها إلى تجربة داكنة، حسية، ومغرية تجعلك تنسى كل ما اعتقدت أنك تعرفه عن الشرق الأقصى. مكوّنات نادرة، تقنيات تقليدية وتقديم لا يمكن تجاهله. في DOMO نحن لا نبحث عن موافقة أحد - نحن من يحدد المعيار.',
           hours: 'ساعات العمل: الأحد–الخميس 12:00–23:30 | الجمعة–السبت 12:00–00:00',
           hoursNote: '* التوصيل والاستلام متاح خلال ساعات العمل',
-          logo: 'https://picsum.photos/seed/domologo/80/80',
+          logo: 'Domo/domo_logo.png',
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
