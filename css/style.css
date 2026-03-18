@@ -265,7 +265,7 @@ a:hover {
 
 @media (max-width: 520px) {
   .hero-brands-row {
-    gap: 0;
+    gap: 0.25rem;
     padding: 0 0.35rem;
   }
 
