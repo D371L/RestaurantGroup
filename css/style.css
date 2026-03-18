@@ -237,7 +237,10 @@ a:hover {
   align-items: center;
   gap: clamp(0.75rem, 2.5vw, 1.4rem);
   margin: 0 auto 1.25rem;
+  width: 100%;
+  max-width: 100%;
   padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .hero-brand-logo-link {
@@ -247,11 +250,14 @@ a:hover {
   text-decoration: none;
   transition: transform 0.25s ease;
   will-change: transform;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .hero-brand-logo {
   height: 100px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   display: block;
   pointer-events: none;
@@ -259,11 +265,24 @@ a:hover {
 
 @media (max-width: 520px) {
   .hero-brands-row {
-    gap: 0.6rem;
+    gap: 0;
+    padding: 0 0.35rem;
   }
 
   .hero-brand-logo {
-    height: 90px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-brand-logo {
+    height: 75px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-brand-logo {
+    height: 65px;
   }
 }
 
@@ -514,6 +533,7 @@ a:hover {
 
 .venue-description-wrap.is-clamped .venue-description {
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
