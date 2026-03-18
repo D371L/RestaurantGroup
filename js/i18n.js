@@ -19,7 +19,8 @@
         venueSmash: 'סמאש בורגר',
         venueArto: 'ארטו',
         menus: 'תפריטים',
-        contact: 'צור קשר'
+        contact: 'יצירת קשר',
+        joinSuccess: 'הצטרפו להצלחה'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -30,6 +31,10 @@
           title: 'EXIT GROUP - הקבוצה הקולינרית',
           text: 'לפני עשור הגענו כדי להרים את הווליום, ומאז אנחנו פשוט מסרבים להנמיך. זה התחיל עם ה״ארטו״, הלב הפועם שחיבר בין קולינריה גבוהה לאווירה בועטת, והמשיך במסע של תעוזה שבו שברנו את המוסכמות של עצמנו בכל פעם מחדש. מה״סמאש בורגר״ שהביא את השחיתות האמריקאית לשיא בשיא הקורונה, דרך הדיוק והאיפוק המהפנט של ״דומו״ ועד הסטריט-פוד הממזר של ASI ATI.\n\nאנחנו לא רק פותחים מסעדות, אנחנו יוצרים תרבות. אנחנו כאן כדי להתרגש, לחדש ולהוכיח שאפשר להגיש יוקרה עם קריצה, ואיכות ללא פשרות עם המון חוצפה. לא באנו רק כדי להישאר - באנו כדי להגדיר מחדש את הטעם שלכם.'
         }
+      },
+      join: {
+        title: 'הצטרפו להצלחה',
+        text: 'בקרוב נעדכן כאן פרטים נוספים. תודה על ההמתנה.'
       },
       venues: [
         {
@@ -105,7 +110,8 @@
         venueSmash: 'Смаш Бургер',
         venueArto: 'Арто',
         menus: 'Меню',
-        contact: 'Контакт'
+        contact: 'Контакт',
+        joinSuccess: 'Присоединяйтесь к успеху'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -116,6 +122,10 @@
           title: 'О EXIT GROUP',
           text: 'Десять лет назад мы пришли, чтобы поднять громкость, и с тех пор просто отказываемся убавлять звук. Всё началось с «Арто» - пульсирующего сердца, которое соединило высокую гастрономию с дерзкой клубной атмосферой, и продолжилось путешествием смелых решений, где мы каждый раз ломали собственные рамки. От Smash Burger, который в разгар ковида довёл американский фастфуд до уровня культа, через гипнотическую точность и сдержанность DOMO, и до хитрого стрит-фуда ASI ATI.\n\nМы не просто открываем рестораны - мы создаём культуру. Мы здесь, чтобы волновать, удивлять и снова изобретать, как может выглядеть премиум с улыбкой и дерзостью. Безупречное качество, никакого компромисса и много характера. Мы пришли не просто задержаться - мы здесь, чтобы заново определить ваш вкус.'
         }
+      },
+      join: {
+        title: 'Присоединяйтесь к успеху',
+        text: 'Скоро добавим подробности. Спасибо за ожидание.'
       },
       venues: [
         {
@@ -191,7 +201,8 @@
         venueSmash: 'Smash Burger',
         venueArto: 'Arto',
         menus: 'Menus',
-        contact: 'Contact'
+        contact: 'Contact',
+        joinSuccess: 'Join the success'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -202,6 +213,10 @@
           title: 'About EXIT GROUP',
           text: 'A decade ago we came in to turn the volume up - and we still refuse to turn it down. It started with Arto, the beating heart that fused high-end cuisine with a kicking nightlife vibe, and grew into a journey of bold moves where we kept breaking our own rules. From Smash Burger, which pushed American indulgence to the max right in the middle of COVID, through the hypnotic precision and restraint of Domo, all the way to the street-smart attitude of ASI ATI.\n\nWe don’t just open restaurants - we build culture. We’re here to get excited, to reinvent, and to prove that you can serve luxury with a wink and uncompromising quality with plenty of attitude. We didn’t come just to stay - we came to redefine your taste.'
         }
+      },
+      join: {
+        title: 'Join the success',
+        text: 'Coming soon: we will add more details here. Thank you for waiting.'
       },
       venues: [
         {
@@ -277,7 +292,8 @@
         venueSmash: 'سماش برجر',
         venueArto: 'آرتو',
         menus: 'قوائم الطعام',
-        contact: 'تواصل معنا'
+        contact: 'تواصل معنا',
+        joinSuccess: 'انضموا إلى النجاح'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -288,6 +304,10 @@
           title: 'حول EXIT GROUP',
           text: 'منذ عقد جئنا لنرفع مستوى الصوت، ومنذ ذلك الحين نرفض أن نُخفّضه. بدأت الرحلة مع \"آرتو\"، القلب النابض الذي جمع بين المطبخ الراقي والأجواء الجريئة، واستمرت بمسار من الجرأة كسرنا فيه قواعدنا في كل مرة من جديد. من Smash Burger الذي جلب أقصى درجات الانغماس الأمريكي في ذروة الكورونا، مروراً بالدقة والهدوء الآسر في DOMO، وصولاً إلى ستريت فود مشاغب يحمل توقيع ASI ATI.\n\nنحن لا نفتح مطاعم فحسب، بل نصنع ثقافة. نحن هنا لنُشعل الحماس، نبتكر من جديد، ونُثبت أنه يمكن تقديم الفخامة بروح مرحة، وجودة بلا أي تنازل مع الكثير من الجرأة. لم نأتِ فقط لنكون جزءاً من المشهد - جئنا لنُعيد تعريف ذائقتكم.'
         }
+      },
+      join: {
+        title: 'انضموا إلى النجاح',
+        text: 'قريباً سنضيف تفاصيل إضافية هنا. شكراً لانتظاركم.'
       },
       venues: [
         {

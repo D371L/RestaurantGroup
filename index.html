@@ -22,6 +22,7 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
+      <video class="hero-bg-video" src="hero_background.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
       <header class="site-header">
         <div class="hero-lang-wrap" dir="ltr">
           <div class="hero-lang" aria-label="Language">
@@ -31,16 +32,32 @@
             <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
           </div>
         </div>
-        <nav class="hero-nav" aria-label="Restaurants">
-          <a href="#venue-domo" data-i18n="nav.venueDomo">דומו</a>
-          <a href="#venue-haasiyati" data-i18n="nav.venueHaasiyati">האסיאתי</a>
-          <a href="#venue-smash" data-i18n="nav.venueSmash">סמאש בורגר</a>
-          <a href="#venue-arto" data-i18n="nav.venueArto">ארטו</a>
+        <nav class="hero-nav" aria-label="Contact and join">
+          <a href="mailto:exitgroup.contact@gmail.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20http%3A%2F%2Fexitgroup.co.il%2F" data-i18n="nav.contact">יצירת קשר</a>
+          <a href="join.html" data-i18n="nav.joinSuccess">הצטרפו להצלחה</a>
         </nav>
       </header>
       <h1 id="hero-title" class="hero-title">
-        <img src="logo.png" alt="Exit Group" data-i18n-attr="alt:hero.title" class="hero-logo">
+        <div class="hero-logo-stage">
+          <img src="logo.png" alt="Exit Group" data-i18n-attr="alt:hero.title" class="hero-logo">
+        </div>
       </h1>
+
+      <div class="hero-brands-row" aria-label="Brands">
+        <a href="#venue-arto" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueArto">
+          <img class="hero-brand-logo" src="img/hero-venue-arto.png" alt="">
+        </a>
+        <a href="#venue-domo" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueDomo">
+          <img class="hero-brand-logo" src="img/hero-venue-domo.png" alt="">
+        </a>
+        <a href="#venue-haasiyati" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueHaasiyati">
+          <img class="hero-brand-logo" src="img/hero-venue-asiati.png" alt="">
+        </a>
+        <a href="#venue-smash" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueSmash">
+          <img class="hero-brand-logo" src="img/hero-venue-smash.png" alt="">
+        </a>
+      </div>
+
       <button type="button" class="hero-scroll-down" aria-label="Scroll to restaurants" data-target="#venues">
         <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 4v16M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
