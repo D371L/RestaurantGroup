@@ -446,14 +446,50 @@ a:hover {
 /* Join Page */
 .join-page {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  align-content: start;
+  padding: 7.75rem 1rem 4rem;
   background: radial-gradient(circle at top, #3a3a3a 0%, #111111 100%);
   color: #fff;
   text-align: center;
+}
+
+.join-back-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0 0 1.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  z-index: 2;
+  animation: joinBackNudgeRight 1.8s ease-in-out infinite;
+}
+
+.join-back-home:hover,
+.join-back-home:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes joinBackNudgeRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
 }
 
 .join-title {
@@ -469,6 +505,39 @@ a:hover {
   font-size: 1rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.85);
+  white-space: pre-line;
+}
+
+.join-photos {
+  width: min(100%, 640px);
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+
+.join-photos img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  max-height: 165px;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .join-photos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .join-photos img {
+    aspect-ratio: 4 / 3;
+    max-height: 210px;
+  }
 }
 
 .venue-address-pill {
