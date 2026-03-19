@@ -252,6 +252,8 @@ a:hover {
   will-change: transform;
   flex: 0 1 auto;
   min-width: 0;
+  --brand-float-duration: 3.4s;
+  --brand-float-delay: 0s;
 }
 
 .hero-brand-logo {
@@ -261,6 +263,28 @@ a:hover {
   object-fit: contain;
   display: block;
   pointer-events: none;
+  animation: heroBrandFloat var(--brand-float-duration) ease-in-out var(--brand-float-delay) infinite;
+  will-change: transform;
+}
+
+.hero-brand-logo-link:nth-child(1) {
+  --brand-float-duration: 3.1s;
+  --brand-float-delay: -0.25s;
+}
+
+.hero-brand-logo-link:nth-child(2) {
+  --brand-float-duration: 3.8s;
+  --brand-float-delay: -1.05s;
+}
+
+.hero-brand-logo-link:nth-child(3) {
+  --brand-float-duration: 4.15s;
+  --brand-float-delay: -0.6s;
+}
+
+.hero-brand-logo-link:nth-child(4) {
+  --brand-float-duration: 2.95s;
+  --brand-float-delay: -1.4s;
 }
 
 @media (max-width: 520px) {
@@ -288,6 +312,16 @@ a:hover {
 
 .hero-brand-logo-link:hover {
   transform: translateY(-1px) scale(1.03);
+}
+
+@keyframes heroBrandFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 /* Group intro */
