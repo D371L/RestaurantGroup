@@ -20,7 +20,8 @@
         venueArto: 'ארטו',
         menus: 'תפריטים',
         contact: 'יצירת קשר',
-        joinSuccess: 'הצטרפו להצלחה'
+        joinSuccess: 'הצטרפו להצלחה',
+        customerClub: 'מועדון לקוחות'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -35,6 +36,19 @@
       join: {
         title: 'הצטרפו להצלחה',
         text: 'הקבוצה שלנו פותחת את הדלת להזדמנות להצטרף להצלחה מוכחת בעולם הקולינריה. לאחר בנייה של מספר מותגים מצליחים עם קהל נאמן ותפעול מדויק, אנו מציעים ליזמים ואנשים שחיים ונושמים את תחום האוכל לקחת חלק בצמיחה - באמצעות מודל זכיינות מבוסס, יציב ורווחי.\n\nהזכיינות מאפשרת להצטרף למותגים שכבר הוכיחו את עצמם בשטח, ליהנות מליווי מקצועי מלא, קונספט מגובש, מערך שיווקי ותפעולי, וידע שנבנה מתוך ניסיון אמיתי.\n\nאנחנו מחפשים שותפים עם תשוקה לאירוח, הבנה עסקית ורצון לגדול יחד איתנו - אנשים שרוצים לקחת חלק במשהו גדול, ולהפוך הצלחה קיימת להצלחה אישית.\n\nזו לא רק הזדמנות עסקית, זו הזדמנות להיות חלק מקבוצה שמובילה, מתפתחת וממשיכה לייצר חוויות אוכל ברמה גבוהה.'
+      },
+      contact: {
+        title: 'יצירת קשר',
+        intro: 'בחרו דרך נוחה ליצירת קשר (טסט).',
+        phoneLabel: 'טלפון',
+        phone: '+972-50-123-4567',
+        emailLabel: 'אימייל',
+        email: 'info@test-exitgroup.co.il',
+        instagramLabel: 'אינסטגרם',
+        instagram: '@exitgroup.test',
+        addressLabel: 'כתובת משרד',
+        address: 'חיפה, ישראל',
+        hours: 'שעות מענה (טסט): א׳-ה׳ 09:00-18:00'
       },
       venues: [
         {
@@ -111,7 +125,8 @@
         venueArto: 'Арто',
         menus: 'Меню',
         contact: 'Контакт',
-        joinSuccess: 'Присоединяйтесь к успеху'
+        joinSuccess: 'Присоединяйтесь к успеху',
+        customerClub: 'Клуб клиентов'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -126,6 +141,19 @@
       join: {
         title: 'Присоединяйтесь к успеху',
         text: 'Наша группа открывает дверь к возможности присоединиться к подтвержденному успеху в мире гастрономии. После создания нескольких сильных брендов с лояльной аудиторией и точной операционной системой, мы предлагаем предпринимателям и людям, которые живут и дышат сферой еды, стать частью роста - через выстроенную, стабильную и прибыльную франчайзинговую модель.\n\nФраншиза дает возможность присоединиться к брендам, которые уже доказали себя на практике, получить полное профессиональное сопровождение, цельную концепцию, маркетинговую и операционную систему, а также знания, выстроенные на реальном опыте.\n\nМы ищем партнеров с настоящей страстью к гостеприимству, деловым мышлением и желанием расти вместе с нами - людей, которые хотят стать частью чего-то большого и превратить существующий успех в личный.\n\nЭто не просто бизнес-возможность, это шанс стать частью группы, которая лидирует, развивается и продолжает создавать гастрономические впечатления высокого уровня.'
+      },
+      contact: {
+        title: 'Контакты',
+        intro: 'Выберите удобный способ связи (тест).',
+        phoneLabel: 'Телефон',
+        phone: '+972-50-123-4567',
+        emailLabel: 'Email',
+        email: 'info@test-exitgroup.co.il',
+        instagramLabel: 'Instagram',
+        instagram: '@exitgroup.test',
+        addressLabel: 'Адрес офиса',
+        address: 'Хайфа, Израиль',
+        hours: 'Часы ответа (тест): Вс-Чт 09:00-18:00'
       },
       venues: [
         {
@@ -202,7 +230,8 @@
         venueArto: 'Arto',
         menus: 'Menus',
         contact: 'Contact',
-        joinSuccess: 'Join the success'
+        joinSuccess: 'Join the success',
+        customerClub: 'Customer club'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -217,6 +246,19 @@
       join: {
         title: 'Join the success',
         text: 'Our group opens the door to an opportunity to join proven success in the culinary world. After building several successful brands with a loyal audience and precise operations, we offer entrepreneurs and people who live and breathe food the chance to be part of this growth - through a structured, stable, and profitable franchise model.\n\nThe franchise allows you to join brands that have already proven themselves in the field, benefit from full professional guidance, a well-defined concept, marketing and operational systems, and know-how built on real experience.\n\nWe are looking for partners with a true passion for hospitality, business understanding, and the desire to grow with us - people who want to be part of something big and turn existing success into personal success.\n\nThis is not only a business opportunity, it is an opportunity to be part of a group that leads, evolves, and continues to create high-level food experiences.'
+      },
+      contact: {
+        title: 'Contact',
+        intro: 'Choose a convenient way to contact us (test).',
+        phoneLabel: 'Phone',
+        phone: '+972-50-123-4567',
+        emailLabel: 'Email',
+        email: 'info@test-exitgroup.co.il',
+        instagramLabel: 'Instagram',
+        instagram: '@exitgroup.test',
+        addressLabel: 'Office address',
+        address: 'Haifa, Israel',
+        hours: 'Response hours (test): Sun-Thu 09:00-18:00'
       },
       venues: [
         {
@@ -293,7 +335,8 @@
         venueArto: 'آرتو',
         menus: 'قوائم الطعام',
         contact: 'تواصل معنا',
-        joinSuccess: 'انضموا إلى النجاح'
+        joinSuccess: 'انضموا إلى النجاح',
+        customerClub: 'نادي العملاء'
       },
       hero: {
         subtitle: 'Culinary Group',
@@ -308,6 +351,19 @@
       join: {
         title: 'انضموا إلى النجاح',
         text: 'تفتح مجموعتنا الباب أمام فرصة الانضمام إلى نجاح مثبت في عالم الطهي. بعد بناء عدة علامات ناجحة تمتلك جمهورا وفيا وتشغيلا دقيقا، نقدم لرواد الأعمال ولمن يعيشون ويتنفسون مجال الطعام فرصة المشاركة في النمو - من خلال نموذج امتياز قائم، مستقر ومربح.\n\nيمنحك الامتياز فرصة الانضمام إلى علامات أثبتت نفسها بالفعل على أرض الواقع، والاستفادة من مرافقة مهنية كاملة، ومفهوم متكامل، ومنظومة تسويقية وتشغيلية، ومعرفة مبنية على خبرة حقيقية.\n\nنحن نبحث عن شركاء لديهم شغف حقيقي بالضيافة، وفهم تجاري، ورغبة في النمو معنا - أشخاص يريدون أن يكونوا جزءا من شيء كبير، وأن يحولوا النجاح القائم إلى نجاح شخصي.\n\nهذه ليست مجرد فرصة تجارية، بل فرصة لتكون جزءا من مجموعة تقود وتتطور وتواصل صناعة تجارب طعام بمستوى عال.'
+      },
+      contact: {
+        title: 'تواصل معنا',
+        intro: 'اختر طريقة التواصل المناسبة لك (تجريبي).',
+        phoneLabel: 'الهاتف',
+        phone: '+972-50-123-4567',
+        emailLabel: 'البريد الإلكتروني',
+        email: 'info@test-exitgroup.co.il',
+        instagramLabel: 'إنستغرام',
+        instagram: '@exitgroup.test',
+        addressLabel: 'عنوان المكتب',
+        address: 'حيفا، إسرائيل',
+        hours: 'ساعات الرد (تجريبية): الأحد-الخميس 09:00-18:00'
       },
       venues: [
         {

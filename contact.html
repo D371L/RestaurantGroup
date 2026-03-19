@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="contact.title">Контакты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="page-loader-inner">
+      <img src="logo.png" alt="Exit Group" class="page-loader-logo">
+      <div class="page-loader-bar">
+        <div class="page-loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="hero-lang-wrap" dir="ltr">
+      <div class="hero-lang" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
+        <button type="button" class="lang-btn" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
+    </div>
+    <nav class="hero-nav" aria-label="Contact and join">
+      <a href="contact.html" data-i18n="nav.contact">יצירת קשר</a>
+      <a href="join.html" data-i18n="nav.joinSuccess">הצטרפו להצלחה</a>
+      <a href="#" data-i18n="nav.customerClub">מועדון לקוחות</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="contact-page" aria-labelledby="contact-title">
+      <video class="contact-bg-video" src="join_background.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+      <a href="index.html" class="join-back-home" data-i18n-attr="aria-label:nav.home" aria-label="Home">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+      <h1 id="contact-title" class="join-title" data-i18n="contact.title">Контакты</h1>
+      <p class="contact-intro" data-i18n="contact.intro">Выберите удобный способ связи (тест).</p>
+
+      <div class="contact-actions" aria-label="Contact actions">
+        <a class="contact-btn" href="tel:+972501234567">
+          <span class="contact-head">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </span>
+            <span class="contact-label" data-i18n="contact.phoneLabel">Телефон</span>
+          </span>
+          <span class="contact-value" data-i18n="contact.phone">+972-50-123-4567</span>
+        </a>
+
+        <a class="contact-btn" href="mailto:info@test-exitgroup.co.il">
+          <span class="contact-head">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="m22 6-10 7L2 6"></path></svg>
+            </span>
+            <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
+          </span>
+          <span class="contact-value" data-i18n="contact.email">info@test-exitgroup.co.il</span>
+        </a>
+
+        <a class="contact-btn" href="https://www.instagram.com/exitgroup.test/" target="_blank" rel="noopener">
+          <span class="contact-head">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </span>
+            <span class="contact-label" data-i18n="contact.instagramLabel">Instagram</span>
+          </span>
+          <span class="contact-value" data-i18n="contact.instagram">@exitgroup.test</span>
+        </a>
+
+        <a class="contact-btn" href="https://maps.google.com/?q=Haifa,Israel" target="_blank" rel="noopener">
+          <span class="contact-head">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </span>
+            <span class="contact-label" data-i18n="contact.addressLabel">Адрес офиса</span>
+          </span>
+          <span class="contact-value" data-i18n="contact.address">Хайфа, Израиль</span>
+        </a>
+      </div>
+
+      <p class="contact-hours" data-i18n="contact.hours">Часы ответа (тест): Вс-Чт 09:00-18:00</p>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer-credit">
+      <span data-i18n="footer.developedBy">Разработано</span>
+      <a href="https://hellsec.dev/" target="_blank" rel="noopener" class="hellsec-link">HellSec</a>
+    </div>
+  </footer>
+
+  <a href="#top" id="back-to-top" class="back-to-top" aria-label="Scroll to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
