@@ -1,44 +1,84 @@
-# Culinary Group — Landing Page
+# EXIT GROUP — Culinary group landing
 
-A premium single-page website for a restaurant group, featuring a responsive dark-themed aesthetic. It includes a custom top header, a multi-language switcher (HE / RU / EN / AR), and four prominent venue cards (Domo, ASI ATI, Smash Burger, Arto) followed by a customized footer.
+Static landing site for **EXIT GROUP** (Haifa, Israel): **Domo**, **ASI ATI**, **Smash Burger**, and **Arto**.  
+Production: **[exitgroup.co.il](https://exitgroup.co.il)** (GitHub Pages).
 
-## Running Locally
+## Features
 
-Open `index.html` directly in your browser or serve the directory using a simple static server:
+- Dark premium UI, hero video, venue cards, galleries, responsive layout.
+- **Four languages:** Hebrew, Russian, English, Arabic (`js/i18n.js`), header switcher, RTL for HE/AR.
+- **Localized URLs** for SEO: `/{he|ru|en|ar}/`, `/{lang}/contact/`, `/{lang}/join/`.
+- **SEO:** meta description, canonical, Open Graph, Twitter Card, JSON-LD (Organization + restaurant list), `robots.txt`, `sitemap.xml`, dynamic `hreflang` via JavaScript.
+- Root-absolute asset paths (`/css/…`, `/js/…`) so nested locale paths resolve correctly.
+
+## Stack
+
+HTML5, CSS3, vanilla JavaScript (no build step or framework).
+
+## Running locally
 
 ```bash
-# Python 3
+# from repository root
 python3 -m http.server 8000
-
-# Node.js
+# or
 npx serve .
 ```
 
-Navigate to [http://localhost:8000](http://localhost:8000).
+Open the site with a locale prefix, e.g. **http://localhost:8000/he/**  
+(The site root `/` serves the same `index.html`; using `/he/`, `/en/`, etc. is easier when testing language switching.)
 
-### Localized URLs (`/he/`, `/en/contact/`, …)
+### Syncing per-locale copies (required for GitHub Pages)
 
-Canonical URLs: **`/{lang}/`**, **`/{lang}/contact/`**, **`/{lang}/join/`** (trailing slash on inner pages matches `contact/index.html` layout).
+**GitHub Pages does not use `.htaccess`.** URLs like `/ru/contact/` need real files in the repo:
 
-- **GitHub Pages** has no `.htaccess` rewrites. The repo includes **duplicate copies** under [`he/`](he/), [`ru/`](ru/), [`en/`](en/), [`ar/`](ar/) so `/he/` maps to `he/index.html` and `/he/contact/` to `he/contact/index.html`. After editing root `index.html`, `contact.html`, or `join.html`, run:
-  ```bash
-  ./scripts/sync-lang-pages.sh
-  ```
-- **Apache:** [`.htaccess`](.htaccess) can serve a single set of files instead (optional).
-- **Netlify:** [`netlify.toml`](netlify.toml`) — `npx netlify-cli dev` for local rewrites.
+| Repository path              | Public URL        |
+|-----------------------------|-------------------|
+| `he/index.html`             | `/he/`            |
+| `he/contact/index.html`     | `/he/contact/`    |
+| `he/join/index.html`        | `/he/join/`       |
+| Same pattern for `ru/`, `en/`, `ar/` | |
 
-Plain `python -m http.server`: open `http://localhost:8000/he/` (folder must exist — run the sync script once).
+After editing the **root** `index.html`, `contact.html`, or `join.html`, run:
 
-## Project Structure
+```bash
+./scripts/sync-lang-pages.sh
+```
 
-- `index.html` — The main markup, containing sections annotated with `data-i18n` and `data-i18n-attr` for dynamic translation.
-- `css/style.css` — Core styling: layout grids, typography, custom scrollbars, animations, and responsive media queries.
-- `css/rtl.css` — Right-To-Left (RTL) specific adjustments for Hebrew and Arabic layouts.
-- `js/i18n.js` — Internationalization (he, ru, en, ar): reads language from the URL prefix when present, updates nav links, `hreflang`, canonical/OG meta, and switches locale via full navigation on HTTP(S).
-- `robots.txt` / `sitemap.xml` — SEO; sitemap lists all localized URLs.
-- `js/main.js` — Core interactive logic: smooth anchor scrolling and intersection observers for scroll animations.
-- `logo.png` — Main group logo used in the hero section.
+Then commit changes under `he/`, `ru/`, `en/`, and `ar/`.
 
-## Images & Media
+### Other hosting
 
-To update the placeholder images, modify the `PLACEHOLDER_IMG` constants within `js/i18n.js`. For specific venue imagery, supply valid URLs to the `logo` and `photos` array fields defined inside the `venues` translation dictionaries. Local files should ideally be placed in an `images/` directory.
+- **Apache** — optional [`.htaccess`](.htaccess) (single file set in the document root + rewrite rules).
+- **Netlify** — [`netlify.toml`](netlify.toml); local testing: `npx netlify-cli dev`.
+
+## Project layout
+
+| Path | Purpose |
+|------|---------|
+| `index.html`, `contact.html`, `join.html` | Source pages (edit these first). |
+| `he/`, `ru/`, `en/`, `ar/` | Duplicates for static hosts without rewrites (see script above). |
+| `css/style.css` | Main styles, layout, animations, responsive rules. |
+| `css/rtl.css` | RTL tweaks for Hebrew and Arabic. |
+| `css/fonts/` | Local Secular One font files (referenced from CSS). |
+| `js/i18n.js` | Translation dictionaries, language from URL, SEO meta, `hreflang`, cross-locale navigation. |
+| `js/main.js` | Smooth anchor scrolling, venue “read more”, other UI behavior. |
+| `robots.txt`, `sitemap.xml` | Crawlers (canonical domain `exitgroup.co.il`). |
+| `scripts/sync-lang-pages.sh` | Copies the three HTML files into each `he|ru|en|ar/` tree. |
+| `Domo/`, `ASI ATI/`, `Smash Burger/`, `Arto/`, `img/` | Venue logos and media (paths configured in `i18n.js`). |
+| `logo.png`, `hero_background.mp4`, `join_background.mp4` | Shared hero and inner-page assets. |
+
+## Content and translations
+
+Copy and image paths live in **`js/i18n.js`** under `he`, `ru`, `en`, `ar` (`venues`, `nav`, `contact`, `meta`, etc.).  
+Image fallbacks: `PLACEHOLDER_IMG` and `PLACEHOLDER_LOGO` in the same file.
+
+The contact page currently shows **placeholder** phone, email, and Instagram (`*@test-exitgroup.co.il`, `@exitgroup.test`). Replace with real details in `i18n.js` before go-live, then run the sync script and commit.
+
+## License and security
+
+This is a public repository — **do not commit** API keys or passwords (this static site does not need them).  
+The footer credits the developer (HellSec).
+
+---
+
+*README reflects the current setup: multilingual URLs, GitHub Pages, and SEO.*
