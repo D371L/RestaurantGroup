@@ -1,16 +1,12 @@
-# EXIT GROUP — localized URLs: /{he|ru|en|ar}/, /{lang}/contact, /{lang}/join
-# Requires: AllowOverride All (Apache)
-
+# EXIT GROUP — localized URLs (Apache). GitHub Pages ignores this file.
 RewriteEngine On
 RewriteBase /
 
-# Pretty language homepages → same HTML files (URL stays /xx/…)
 RewriteRule ^(he|ru|en|ar)/?$ index.html [L]
 RewriteRule ^(he|ru|en|ar)/contact/?$ contact.html [L]
 RewriteRule ^(he|ru|en|ar)/join/?$ join.html [L]
 
-# Legacy paths → canonical localized URLs
-RewriteRule ^contact\.html$ /he/contact [R=301,L]
-RewriteRule ^join\.html$ /he/join [R=301,L]
+RewriteRule ^contact\.html$ /he/contact/ [R=301,L]
+RewriteRule ^join\.html$ /he/join/ [R=301,L]
 RewriteRule ^index\.html$ /he/ [R=301,L]
 RewriteRule ^$ /he/ [R=302,L]

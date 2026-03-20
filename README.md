@@ -16,14 +16,18 @@ npx serve .
 
 Navigate to [http://localhost:8000](http://localhost:8000).
 
-### Localized URLs (`/he/`, `/en/contact`, …)
+### Localized URLs (`/he/`, `/en/contact/`, …)
 
-Production URLs use a language prefix: **`/{he|ru|en|ar}/`**, **`/{lang}/contact`**, **`/{lang}/join`**. The same HTML files (`index.html`, `contact.html`, `join.html`) are served via rewrites:
+Canonical URLs: **`/{lang}/`**, **`/{lang}/contact/`**, **`/{lang}/join/`** (trailing slash on inner pages matches `contact/index.html` layout).
 
-- **Apache:** [`.htaccess`](.htaccess) (needs `AllowOverride All`)
-- **Netlify:** [`netlify.toml`](netlify.toml) — use `npx netlify-cli dev` locally to test rewrites
+- **GitHub Pages** has no `.htaccess` rewrites. The repo includes **duplicate copies** under [`he/`](he/), [`ru/`](ru/), [`en/`](en/), [`ar/`](ar/) so `/he/` maps to `he/index.html` and `/he/contact/` to `he/contact/index.html`. After editing root `index.html`, `contact.html`, or `join.html`, run:
+  ```bash
+  ./scripts/sync-lang-pages.sh
+  ```
+- **Apache:** [`.htaccess`](.htaccess) can serve a single set of files instead (optional).
+- **Netlify:** [`netlify.toml`](netlify.toml`) — `npx netlify-cli dev` for local rewrites.
 
-Plain `python -m http.server` **does not** apply those rules, so paths like `/he/` may 404 locally. Use `netlify dev` or open `index.html` directly (language switcher then only updates text when navigation to another locale path is not available).
+Plain `python -m http.server`: open `http://localhost:8000/he/` (folder must exist — run the sync script once).
 
 ## Project Structure
 

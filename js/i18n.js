@@ -482,11 +482,16 @@
     return 'home';
   }
 
-  /** /he/, /en/contact, /ru/join */
+  /**
+   * Localized paths. Uses /{lang}/contact/ and /{lang}/join/ (trailing slash)
+   * so static hosts like GitHub Pages can serve he/contact/index.html.
+   */
   function getLocalizedPath(lang, pageKey) {
     if (SUPPORTED_LANGS.indexOf(lang) === -1) lang = 'he';
     if (pageKey === 'home') return '/' + lang + '/';
-    return '/' + lang + '/' + pageKey;
+    if (pageKey === 'contact') return '/' + lang + '/contact/';
+    if (pageKey === 'join') return '/' + lang + '/join/';
+    return '/' + lang + '/';
   }
 
   function getDefaultLanguage() {

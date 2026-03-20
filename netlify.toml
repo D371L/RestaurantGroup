@@ -1,4 +1,4 @@
-# Localized URLs (same static files as root). Deploy site root = repo root.
+# Netlify rewrites. GitHub Pages: use duplicated folders (he/, ru/, …) instead.
 
 [[redirects]]
 from = "/"
@@ -12,12 +12,12 @@ status = 301
 
 [[redirects]]
 from = "/contact.html"
-to = "/he/contact"
+to = "/he/contact/"
 status = 301
 
 [[redirects]]
 from = "/join.html"
-to = "/he/join"
+to = "/he/join/"
 status = 301
 
 [[redirects]]
@@ -62,40 +62,80 @@ status = 200
 
 [[redirects]]
 from = "/he/contact"
-to = "/contact.html"
-status = 200
+to = "/he/contact/"
+status = 301
 
 [[redirects]]
 from = "/ru/contact"
-to = "/contact.html"
-status = 200
+to = "/ru/contact/"
+status = 301
 
 [[redirects]]
 from = "/en/contact"
+to = "/en/contact/"
+status = 301
+
+[[redirects]]
+from = "/ar/contact"
+to = "/ar/contact/"
+status = 301
+
+[[redirects]]
+from = "/he/contact/"
 to = "/contact.html"
 status = 200
 
 [[redirects]]
-from = "/ar/contact"
+from = "/ru/contact/"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/en/contact/"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/ar/contact/"
 to = "/contact.html"
 status = 200
 
 [[redirects]]
 from = "/he/join"
-to = "/join.html"
-status = 200
+to = "/he/join/"
+status = 301
 
 [[redirects]]
 from = "/ru/join"
-to = "/join.html"
-status = 200
+to = "/ru/join/"
+status = 301
 
 [[redirects]]
 from = "/en/join"
+to = "/en/join/"
+status = 301
+
+[[redirects]]
+from = "/ar/join"
+to = "/ar/join/"
+status = 301
+
+[[redirects]]
+from = "/he/join/"
 to = "/join.html"
 status = 200
 
 [[redirects]]
-from = "/ar/join"
+from = "/ru/join/"
+to = "/join.html"
+status = 200
+
+[[redirects]]
+from = "/en/join/"
+to = "/join.html"
+status = 200
+
+[[redirects]]
+from = "/ar/join/"
 to = "/join.html"
 status = 200
