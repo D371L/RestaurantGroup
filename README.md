@@ -82,4 +82,6 @@ The footer credits the developer (HellSec).
 
 ---
 
-*README reflects the current setup: multilingual URLs, GitHub Pages, and SEO.*
+<div align="center">
+  <h4>Forged with 🔥 By <a href="mailto:D371L@pm.me"><b>D371L</b></a></h4>
+</div>
