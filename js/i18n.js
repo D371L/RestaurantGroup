@@ -4,6 +4,9 @@
   /** Canonical origin for SEO (no trailing slash). */
   var SITE_ORIGIN = 'https://exitgroup.co.il';
 
+  /** Social / messenger preview (dark bg + wordmarks); not the same as site logo. */
+  var OG_SHARE_IMAGE_PATH = '/og_image_for_messengers.png';
+
   var PLACEHOLDER_IMG = 'https://placehold.co/300x200/f0ebe3/e0d9ce?text=Photo';
   var PLACEHOLDER_LOGO = 'https://placehold.co/80x80/f0ebe3/8b6914?text=Logo';
 
@@ -32,8 +35,7 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'קבוצת המסעדות',
-        tagline: 'דומו · האסיאתי · סמאש בורגר · ארטו — חיפה'
+        title: 'קבוצת המסעדות'
       },
       group: {
         intro: {
@@ -144,8 +146,7 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'Кулинарная группа',
-        tagline: 'Рестораны в Хайфе: Домо, ASI ATI, Smash Burger, Арто'
+        title: 'Кулинарная группа'
       },
       group: {
         intro: {
@@ -257,8 +258,7 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'Restaurant Group',
-        tagline: 'Haifa: Domo, ASI ATI, Smash Burger & Arto'
+        title: 'Restaurant Group'
       },
       group: {
         intro: {
@@ -370,8 +370,7 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'مجموعة المطاعم',
-        tagline: 'حيفا: دومو، الآسيوي، سماش برجر، آرتو'
+        title: 'مجموعة المطاعم'
       },
       group: {
         intro: {
@@ -570,7 +569,7 @@
       pageUrl = SITE_ORIGIN + getLocalizedPath(currentLang, 'home');
     }
 
-    var ogImage = absoluteAssetUrl('/logo.png');
+    var ogImage = absoluteAssetUrl(OG_SHARE_IMAGE_PATH);
 
     setSeoMetaAttr('seo-description', desc);
 

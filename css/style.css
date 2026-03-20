@@ -238,22 +238,6 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero-seo-tagline {
-  display: block;
-  margin-top: 0.65rem;
-  font-family: var(--font-sans, system-ui, sans-serif);
-  font-size: clamp(0.78rem, 2.1vw, 0.95rem);
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: rgba(245, 236, 220, 0.82);
-  text-align: center;
-  text-wrap: balance;
-  max-width: 28rem;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.35;
-}
-
 .hero-brands-row {
   display: flex;
   direction: ltr;

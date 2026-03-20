@@ -63,6 +63,7 @@ Then commit changes under `he/`, `ru/`, `en/`, and `ar/`.
 | `js/i18n.js` | Translation dictionaries, language from URL, SEO meta, `hreflang`, cross-locale navigation. |
 | `js/main.js` | Smooth anchor scrolling, venue “read more”, other UI behavior. |
 | `robots.txt`, `sitemap.xml` | Crawlers (canonical domain `exitgroup.co.il`). |
+| `og_image_for_messengers.png` | Open Graph / Telegram / Twitter preview (dark background + wordmarks). Used by `og:image` and `twitter:image` in HTML and `js/i18n.js` (`OG_SHARE_IMAGE_PATH`). Separate from `logo.png` (hero + JSON-LD `Organization.logo`). Telegram caches previews — after changing this file, try sharing a URL with a new query (e.g. `?v=2`). |
 | `scripts/sync-lang-pages.sh` | Copies the three HTML files into each `he|ru|en|ar/` tree. |
 | `Domo/`, `ASI ATI/`, `Smash Burger/`, `Arto/`, `img/` | Venue logos and media (paths configured in `i18n.js`). |
 | `logo.png`, `hero_background.mp4`, `join_background.mp4` | Shared hero and inner-page assets. |
