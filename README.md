@@ -16,12 +16,22 @@ npx serve .
 
 Navigate to [http://localhost:8000](http://localhost:8000).
 
+### Localized URLs (`/he/`, `/en/contact`, …)
+
+Production URLs use a language prefix: **`/{he|ru|en|ar}/`**, **`/{lang}/contact`**, **`/{lang}/join`**. The same HTML files (`index.html`, `contact.html`, `join.html`) are served via rewrites:
+
+- **Apache:** [`.htaccess`](.htaccess) (needs `AllowOverride All`)
+- **Netlify:** [`netlify.toml`](netlify.toml) — use `npx netlify-cli dev` locally to test rewrites
+
+Plain `python -m http.server` **does not** apply those rules, so paths like `/he/` may 404 locally. Use `netlify dev` or open `index.html` directly (language switcher then only updates text when navigation to another locale path is not available).
+
 ## Project Structure
 
 - `index.html` — The main markup, containing sections annotated with `data-i18n` and `data-i18n-attr` for dynamic translation.
 - `css/style.css` — Core styling: layout grids, typography, custom scrollbars, animations, and responsive media queries.
 - `css/rtl.css` — Right-To-Left (RTL) specific adjustments for Hebrew and Arabic layouts.
-- `js/i18n.js` — Internationalization logic and translation dictionaries (he, ru, en, ar). Handles language switching and DOM updates.
+- `js/i18n.js` — Internationalization (he, ru, en, ar): reads language from the URL prefix when present, updates nav links, `hreflang`, canonical/OG meta, and switches locale via full navigation on HTTP(S).
+- `robots.txt` / `sitemap.xml` — SEO; sitemap lists all localized URLs.
 - `js/main.js` — Core interactive logic: smooth anchor scrolling and intersection observers for scroll animations.
 - `logo.png` — Main group logo used in the hero section.
 

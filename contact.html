@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="he">
 <head>
+  <script>
+    (function () {
+      var m = (location.pathname || '').match(/^\/(he|ru|en|ar)(?:\/|$)/);
+      if (m) {
+        document.documentElement.lang = m[1];
+        document.documentElement.dir = m[1] === 'he' || m[1] === 'ar' ? 'rtl' : 'ltr';
+      }
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="contact.title">Контакты</title>
+  <title data-i18n="contact.title">יצירת קשר</title>
+  <meta name="description" id="seo-description" content="יצירת קשר עם EXIT GROUP בחיפה — טלפון, אימייל, אינסטגרם וכתובת.">
+  <link rel="canonical" id="seo-canonical" href="https://exitgroup.co.il/he/contact">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EXIT GROUP">
+  <meta property="og:title" id="og-title" content="יצירת קשר">
+  <meta property="og:description" id="og-description" content="יצירת קשר עם EXIT GROUP בחיפה — טלפון, אימייל, אינסטגרם וכתובת.">
+  <meta property="og:url" id="og-url" content="https://exitgroup.co.il/he/contact">
+  <meta property="og:image" id="og-image" content="https://exitgroup.co.il/logo.png">
+  <meta property="og:locale" id="og-locale" content="he_IL">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twitter-title" content="יצירת קשר">
+  <meta name="twitter:description" id="twitter-description" content="יצירת קשר עם EXIT GROUP בחיפה — טלפון, אימייל, אינסטגרם וכתובת.">
+  <meta name="twitter:image" id="twitter-image" content="https://exitgroup.co.il/logo.png">
+  <meta name="theme-color" content="#1a1510">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/rtl.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/rtl.css">
 </head>
 <body>
   <div id="page-loader" class="page-loader" aria-hidden="true">
     <div class="page-loader-inner">
-      <img src="logo.png" alt="Exit Group" class="page-loader-logo">
+      <img src="/logo.png" alt="Exit Group" class="page-loader-logo">
       <div class="page-loader-bar">
         <div class="page-loader-bar-fill"></div>
       </div>
@@ -30,16 +56,16 @@
       </div>
     </div>
     <nav class="hero-nav" aria-label="Contact and join">
-      <a href="contact.html" data-i18n="nav.contact">יצירת קשר</a>
-      <a href="join.html" data-i18n="nav.joinSuccess">הצטרפו להצלחה</a>
+      <a href="/he/contact" data-localized-page="contact" data-i18n="nav.contact">יצירת קשר</a>
+      <a href="/he/join" data-localized-page="join" data-i18n="nav.joinSuccess">הצטרפו להצלחה</a>
       <a href="#" data-i18n="nav.customerClub">מועדון לקוחות</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="contact-page" aria-labelledby="contact-title">
-      <video class="contact-bg-video" src="join_background.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
-      <a href="index.html" class="join-back-home" data-i18n-attr="aria-label:nav.home" aria-label="Home">
+      <video class="contact-bg-video" src="/join_background.mp4" poster="/logo.png" autoplay muted loop playsinline aria-hidden="true"></video>
+      <a href="/he/" class="join-back-home" data-localized-page="home" data-i18n-attr="aria-label:nav.home" aria-label="Home">
         <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
@@ -104,7 +130,7 @@
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
   </a>
 
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

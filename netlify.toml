@@ -1,0 +1,101 @@
+# Localized URLs (same static files as root). Deploy site root = repo root.
+
+[[redirects]]
+from = "/"
+to = "/he/"
+status = 302
+
+[[redirects]]
+from = "/index.html"
+to = "/he/"
+status = 301
+
+[[redirects]]
+from = "/contact.html"
+to = "/he/contact"
+status = 301
+
+[[redirects]]
+from = "/join.html"
+to = "/he/join"
+status = 301
+
+[[redirects]]
+from = "/he"
+to = "/he/"
+status = 301
+
+[[redirects]]
+from = "/ru"
+to = "/ru/"
+status = 301
+
+[[redirects]]
+from = "/en"
+to = "/en/"
+status = 301
+
+[[redirects]]
+from = "/ar"
+to = "/ar/"
+status = 301
+
+[[redirects]]
+from = "/he/"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/ru/"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/en/"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/ar/"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/he/contact"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/ru/contact"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/en/contact"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/ar/contact"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/he/join"
+to = "/join.html"
+status = 200
+
+[[redirects]]
+from = "/ru/join"
+to = "/join.html"
+status = 200
+
+[[redirects]]
+from = "/en/join"
+to = "/join.html"
+status = 200
+
+[[redirects]]
+from = "/ar/join"
+to = "/join.html"
+status = 200

@@ -8,11 +8,3 @@
   flex-direction: row;
 }
 
-[dir="rtl"] .venue-contact {
-  flex-direction: row-reverse;
-}
-
-[dir="rtl"] .venue-contact-icons {
-  flex-direction: row-reverse;
-}
-

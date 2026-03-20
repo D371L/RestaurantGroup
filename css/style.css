@@ -238,6 +238,22 @@ a:hover {
   margin: 0 auto;
 }
 
+.hero-seo-tagline {
+  display: block;
+  margin-top: 0.65rem;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: clamp(0.78rem, 2.1vw, 0.95rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(245, 236, 220, 0.82);
+  text-align: center;
+  text-wrap: balance;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.35;
+}
+
 .hero-brands-row {
   display: flex;
   direction: ltr;
@@ -876,9 +892,11 @@ a:hover {
 }
 
 .venue-contact {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  display: grid;
+  /* Keep column order LTR so Instagram stays left and hours stay right in RTL locales */
+  direction: ltr;
+  grid-template-columns: auto 1fr;
+  align-items: center;
   gap: 1rem;
   padding: 1rem;
   margin-bottom: 1.25rem;
@@ -887,10 +905,75 @@ a:hover {
   border-radius: var(--radius);
 }
 
-.venue-contact-icons {
+/* DOMO / ASI / Smash: Instagram | true-center CTA | hours (same physical layout in LTR/RTL) */
+.venue-contact--with-cta {
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.venue-contact--with-cta .venue-contact-leading {
+  display: contents;
+}
+
+.venue-contact--with-cta .venue-contact-social {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+}
+
+/* Span full row so the button is centered on the whole bar, not only the middle track */
+.venue-contact--with-cta .venue-contact-cta {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: center;
+  width: max-content;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.venue-contact--with-cta .venue-contact-cta .venue-book-btn,
+.venue-contact--with-cta .venue-contact-cta a {
+  pointer-events: auto;
+}
+
+.venue-contact--with-cta .venue-contact-info {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  text-align: end;
+}
+
+/* Hebrew/RTL: hours block reads RTL and aligns to the physical right of the bar */
+[dir='rtl'] .venue-contact .venue-contact-info {
+  direction: rtl;
+  text-align: start;
+}
+
+/* Arto: Instagram | hours */
+.venue-contact:not(.venue-contact--with-cta) .venue-contact-social {
+  justify-self: start;
+}
+
+.venue-contact:not(.venue-contact--with-cta) .venue-contact-info {
+  justify-self: end;
+  text-align: end;
+}
+
+.venue-contact-leading {
   display: flex;
-  gap: 0.75rem;
+  flex-direction: row;
   align-items: center;
+  gap: 0.75rem;
+}
+
+.venue-contact-social {
+  display: flex;
+  align-items: center;
+}
+
+.venue-contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .venue-icon {
@@ -950,8 +1033,7 @@ a:hover {
 }
 
 .venue-contact-info {
-  flex: 1;
-  min-width: 200px;
+  min-width: 0;
 }
 
 .venue-hours {
@@ -1064,8 +1146,56 @@ a:hover {
     padding: 1.4rem 1.25rem 1.5rem;
   }
 
-  .venue-contact {
-    flex-direction: column;
+  .venue-contact,
+  .venue-contact--with-cta {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  /* Row 1: Instagram left, CTA geometric center; row 2: hours (fix grid-row:1 leak from desktop) */
+  .venue-contact--with-cta .venue-contact-leading {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+  }
+
+  .venue-contact--with-cta .venue-contact-social {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    width: auto;
+    max-width: none;
+    pointer-events: auto;
+  }
+
+  .venue-contact--with-cta .venue-contact-cta {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    width: max-content;
+    max-width: 100%;
+    pointer-events: auto;
+  }
+
+  .venue-contact--with-cta .venue-contact-info {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: stretch;
+    text-align: start;
+  }
+
+  .venue-contact:not(.venue-contact--with-cta) .venue-contact-social {
+    grid-column: 1;
+  }
+
+  .venue-contact:not(.venue-contact--with-cta) .venue-contact-info {
+    grid-column: 1;
+    justify-self: stretch;
+    text-align: start;
   }
 
   .venue-gallery {
@@ -1120,4 +1250,65 @@ a:hover {
   text-decoration: none;
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Respect user preference: less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-loader-bar-fill {
+    animation: none;
+  }
+
+  .hero-logo {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-brand-logo {
+    animation: none;
+  }
+
+  .hero-brand-logo-link {
+    transition: none;
+  }
+
+  .hero-scroll-down svg {
+    animation: none;
+  }
+
+  .join-back-home {
+    animation: none;
+  }
+
+  .group-intro,
+  .venue-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .venue-card.is-revealed:hover {
+    transform: none;
+  }
+
+  .venue-description-inner {
+    transition: none;
+  }
+
+  .venue-read-more,
+  .venue-icon,
+  .venue-book-btn,
+  .venue-gallery img,
+  .join-photos img,
+  .back-to-top {
+    transition: none;
+  }
+
+  .back-to-top:hover {
+    transform: none;
+  }
 }

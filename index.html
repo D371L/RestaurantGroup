@@ -1,19 +1,148 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="he">
 <head>
+  <script>
+    (function () {
+      var m = (location.pathname || '').match(/^\/(he|ru|en|ar)(?:\/|$)/);
+      if (m) {
+        document.documentElement.lang = m[1];
+        document.documentElement.dir = m[1] === 'he' || m[1] === 'ar' ? 'rtl' : 'ltr';
+      }
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="meta.title">Кулинарная группа</title>
+  <title data-i18n="meta.title">קבוצה קולינרית</title>
+  <meta name="description" id="seo-description" content="EXIT GROUP — קבוצת המסעדות בחיפה: דומו, האסיאתי, סמאש בורגר וארטו. מטבח יפני, אוכל אסיאתי, המבורגרים ואירועים.">
+  <link rel="canonical" id="seo-canonical" href="https://exitgroup.co.il/he/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EXIT GROUP">
+  <meta property="og:title" id="og-title" content="קבוצה קולינרית">
+  <meta property="og:description" id="og-description" content="EXIT GROUP — קבוצת המסעדות בחיפה: דומו, האסיאתי, סמאש בורגר וארטו.">
+  <meta property="og:url" id="og-url" content="https://exitgroup.co.il/he/">
+  <meta property="og:image" id="og-image" content="https://exitgroup.co.il/logo.png">
+  <meta property="og:locale" id="og-locale" content="he_IL">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twitter-title" content="קבוצה קולינרית">
+  <meta name="twitter:description" id="twitter-description" content="EXIT GROUP — קבוצת המסעדות בחיפה: דומו, האסיאתי, סמאש בורגר וארטו.">
+  <meta name="twitter:image" id="twitter-image" content="https://exitgroup.co.il/logo.png">
+  <meta name="theme-color" content="#1a1510">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/rtl.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/rtl.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://exitgroup.co.il/#organization",
+        "name": "EXIT GROUP",
+        "url": "https://exitgroup.co.il/he/",
+        "logo": "https://exitgroup.co.il/logo.png",
+        "sameAs": [
+          "https://www.instagram.com/domo_japanese_bar/",
+          "https://www.instagram.com/asi___ati/",
+          "https://www.instagram.com/smashburgerhaifa/",
+          "https://www.instagram.com/arto_taste_above_everything/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://exitgroup.co.il/#website",
+        "url": "https://exitgroup.co.il/he/",
+        "name": "EXIT GROUP",
+        "inLanguage": ["he", "ru", "en", "ar"],
+        "publisher": { "@id": "https://exitgroup.co.il/#organization" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://exitgroup.co.il/#venues",
+        "name": "EXIT GROUP restaurants",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": ["Restaurant", "FoodEstablishment"],
+              "name": "Domo",
+              "url": "https://exitgroup.co.il/he/#venue-domo",
+              "image": "https://exitgroup.co.il/Domo/domo_1.jpg",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ahhei Eilat 69",
+                "addressLocality": "Haifa",
+                "addressCountry": "IL"
+              },
+              "sameAs": "https://www.instagram.com/domo_japanese_bar/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": ["Restaurant", "FoodEstablishment"],
+              "name": "ASI ATI",
+              "url": "https://exitgroup.co.il/he/#venue-haasiyati",
+              "image": "https://exitgroup.co.il/img/venues/asiati-1.jpeg",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ahhei Eilat 69",
+                "addressLocality": "Haifa",
+                "addressCountry": "IL"
+              },
+              "sameAs": "https://www.instagram.com/asi___ati/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": ["Restaurant", "FoodEstablishment"],
+              "name": "Smash Burger",
+              "url": "https://exitgroup.co.il/he/#venue-smash",
+              "image": "https://exitgroup.co.il/img/venues/smash-1.jpeg",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Netivson 9",
+                "addressLocality": "Haifa",
+                "addressCountry": "IL"
+              },
+              "sameAs": "https://www.instagram.com/smashburgerhaifa/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": ["Restaurant", "FoodEstablishment"],
+              "name": "Arto",
+              "url": "https://exitgroup.co.il/he/#venue-arto",
+              "image": "https://exitgroup.co.il/img/venues/arto-1.webp",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kedoshei Yasi 2",
+                "addressLocality": "Haifa",
+                "addressCountry": "IL"
+              },
+              "sameAs": "https://www.instagram.com/arto_taste_above_everything/"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div id="page-loader" class="page-loader" aria-hidden="true">
     <div class="page-loader-inner">
-      <img src="logo.png" alt="Exit Group" class="page-loader-logo">
+      <img src="/logo.png" alt="Exit Group" class="page-loader-logo">
       <div class="page-loader-bar">
         <div class="page-loader-bar-fill"></div>
       </div>
@@ -22,7 +151,7 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <video class="hero-bg-video" src="hero_background.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+      <video class="hero-bg-video" src="/hero_background.mp4" poster="/logo.png" autoplay muted loop playsinline aria-hidden="true"></video>
       <header class="site-header">
         <div class="hero-lang-wrap" dir="ltr">
           <div class="hero-lang" aria-label="Language">
@@ -33,29 +162,30 @@
           </div>
         </div>
         <nav class="hero-nav" aria-label="Contact and join">
-          <a href="contact.html" data-i18n="nav.contact">יצירת קשר</a>
-          <a href="join.html" data-i18n="nav.joinSuccess">הצטרפו להצלחה</a>
+          <a href="/he/contact" data-localized-page="contact" data-i18n="nav.contact">יצירת קשר</a>
+          <a href="/he/join" data-localized-page="join" data-i18n="nav.joinSuccess">הצטרפו להצלחה</a>
           <a href="#" data-i18n="nav.customerClub">מועדון לקוחות</a>
         </nav>
       </header>
       <h1 id="hero-title" class="hero-title">
         <div class="hero-logo-stage">
-          <img src="logo.png" alt="Exit Group" data-i18n-attr="alt:hero.title" class="hero-logo">
+          <img src="/logo.png" alt="Exit Group" data-i18n-attr="alt:hero.title" class="hero-logo">
+          <span class="hero-seo-tagline" data-i18n="hero.tagline">דומו · האסיאתי · סמאש בורגר · ארטו — חיפה</span>
         </div>
       </h1>
 
       <div class="hero-brands-row" aria-label="Brands">
         <a href="#venue-arto" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueArto">
-          <img class="hero-brand-logo" src="img/hero-venue-arto.png" alt="">
+          <img class="hero-brand-logo" src="/img/hero-venue-arto.png" alt="" data-i18n-attr="alt:nav.venueArto">
         </a>
         <a href="#venue-domo" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueDomo">
-          <img class="hero-brand-logo" src="img/hero-venue-domo.png" alt="">
+          <img class="hero-brand-logo" src="/img/hero-venue-domo.png" alt="" data-i18n-attr="alt:nav.venueDomo">
         </a>
         <a href="#venue-haasiyati" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueHaasiyati">
-          <img class="hero-brand-logo" src="img/hero-venue-asiati.png" alt="">
+          <img class="hero-brand-logo" src="/img/hero-venue-asiati.png" alt="" data-i18n-attr="alt:nav.venueHaasiyati">
         </a>
         <a href="#venue-smash" class="hero-brand-logo-link" data-i18n-attr="aria-label:nav.venueSmash">
-          <img class="hero-brand-logo" src="img/hero-venue-smash.png" alt="">
+          <img class="hero-brand-logo" src="/img/hero-venue-smash.png" alt="" data-i18n-attr="alt:nav.venueSmash">
         </a>
       </div>
 
@@ -88,10 +218,14 @@
           </div>
           <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
         </div>
-        <div class="venue-contact">
-          <div class="venue-contact-icons">
-            <a href="#" class="venue-icon venue-icon-instagram" aria-label="Instagram" target="_blank" data-i18n-attr="href:venues.0.websiteLink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-            <a href="https://tabitisrael.co.il/online-reservations/create-reservation?step=search&orgId=67e266f7ff1ccb7c7dfb6e4f" class="venue-book-btn" target="_blank" rel="noopener noreferrer">להזמנת מקום</a>
+        <div class="venue-contact venue-contact--with-cta">
+          <div class="venue-contact-leading">
+            <div class="venue-contact-social">
+              <a href="#" class="venue-icon venue-icon-instagram" aria-label="Instagram" target="_blank" data-i18n-attr="href:venues.0.websiteLink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            </div>
+            <div class="venue-contact-cta">
+              <a href="https://tabitisrael.co.il/online-reservations/create-reservation?step=search&orgId=67e266f7ff1ccb7c7dfb6e4f" class="venue-book-btn" target="_blank" rel="noopener noreferrer" data-i18n="venues.0.bookReservationLabel">להזמנת מקום</a>
+            </div>
           </div>
           <div class="venue-contact-info">
             <p class="venue-hours" data-i18n="venues.0.hours">Часы работы</p>
@@ -115,10 +249,14 @@
           </div>
           <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
         </div>
-        <div class="venue-contact">
-          <div class="venue-contact-icons">
-            <a href="#" class="venue-icon venue-icon-instagram" aria-label="Instagram" target="_blank" data-i18n-attr="href:venues.1.websiteLink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-            <a href="https://wolt.com/he/isr/haifa/district/haifa/brand/asi-ati-il?srsltid=AfmBOoo28jyAmVwMGnaIbNoROwaujUDVcYQR8FyYd7VUeuwWF9xiWt2X" class="venue-book-btn" target="_blank" rel="noopener noreferrer">להזמנת משלוח</a>
+        <div class="venue-contact venue-contact--with-cta">
+          <div class="venue-contact-leading">
+            <div class="venue-contact-social">
+              <a href="#" class="venue-icon venue-icon-instagram" aria-label="Instagram" target="_blank" data-i18n-attr="href:venues.1.websiteLink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            </div>
+            <div class="venue-contact-cta">
+              <a href="https://wolt.com/he/isr/haifa/district/haifa/brand/asi-ati-il?srsltid=AfmBOoo28jyAmVwMGnaIbNoROwaujUDVcYQR8FyYd7VUeuwWF9xiWt2X" class="venue-book-btn" target="_blank" rel="noopener noreferrer" data-i18n="venues.1.bookDeliveryLabel">להזמנת משלוח</a>
+            </div>
           </div>
           <div class="venue-contact-info">
             <p class="venue-hours" data-i18n="venues.1.hours">Часы работы</p>
@@ -142,10 +280,14 @@
           </div>
           <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
         </div>
-        <div class="venue-contact">
-          <div class="venue-contact-icons">
-            <a href="#" class="venue-icon venue-icon-instagram" aria-label="Instagram" target="_blank" data-i18n-attr="href:venues.2.websiteLink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-            <a href="https://wolt.com/he/isr/haifa/restaurant/smash-burger-haifa?srsltid=AfmBOoqnSocQlBF99-16uYYK7-Yi7dLJdh3VXzhxbET7nPUALJchrUHM" class="venue-book-btn" target="_blank" rel="noopener noreferrer">להזמנת משלוח</a>
+        <div class="venue-contact venue-contact--with-cta">
+          <div class="venue-contact-leading">
+            <div class="venue-contact-social">
+              <a href="#" class="venue-icon venue-icon-instagram" aria-label="Instagram" target="_blank" data-i18n-attr="href:venues.2.websiteLink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            </div>
+            <div class="venue-contact-cta">
+              <a href="https://wolt.com/he/isr/haifa/restaurant/smash-burger-haifa?srsltid=AfmBOoqnSocQlBF99-16uYYK7-Yi7dLJdh3VXzhxbET7nPUALJchrUHM" class="venue-book-btn" target="_blank" rel="noopener noreferrer" data-i18n="venues.2.bookDeliveryLabel">להזמנת משלוח</a>
+            </div>
           </div>
           <div class="venue-contact-info">
             <p class="venue-hours" data-i18n="venues.2.hours">Часы работы</p>
@@ -170,7 +312,7 @@
           <button type="button" class="venue-read-more" aria-expanded="false" hidden></button>
         </div>
         <div class="venue-contact">
-          <div class="venue-contact-icons">
+          <div class="venue-contact-social">
             <a href="#" class="venue-icon venue-icon-instagram" aria-label="Instagram" target="_blank" data-i18n-attr="href:venues.3.websiteLink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
           </div>
           <div class="venue-contact-info">
@@ -197,7 +339,7 @@
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
   </a>
 
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

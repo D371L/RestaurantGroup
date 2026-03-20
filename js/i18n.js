@@ -1,12 +1,19 @@
 (function () {
   'use strict';
 
+  /** Canonical origin for SEO (no trailing slash). */
+  var SITE_ORIGIN = 'https://exitgroup.co.il';
+
   var PLACEHOLDER_IMG = 'https://placehold.co/300x200/f0ebe3/e0d9ce?text=Photo';
   var PLACEHOLDER_LOGO = 'https://placehold.co/80x80/f0ebe3/8b6914?text=Logo';
 
   var translations = {
     he: {
-      meta: { title: 'קבוצה קולינרית' },
+      meta: {
+        title: 'קבוצה קולינרית',
+        description:
+          'EXIT GROUP — קבוצת המסעדות בחיפה: דומו, האסיאתי, סמאש בורגר וארטו. מטבח יפני, אוכל אסיאתי, המבורגרים ואירועים. הזמנות ומידע באתר הרשמי.'
+      },
       nav: {
         orderDelivery: 'הזמנת משלוח',
         bookTable: 'הזמנת שולחן',
@@ -25,7 +32,8 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'קבוצת המסעדות'
+        title: 'קבוצת המסעדות',
+        tagline: 'דומו · האסיאתי · סמאש בורגר · ארטו — חיפה'
       },
       group: {
         intro: {
@@ -35,10 +43,14 @@
       },
       join: {
         title: 'הצטרפו להצלחה',
+        metaDescription:
+          'הזדמנות זכיינות עם EXIT GROUP — מותגי מסעדות מוכחים בחיפה, ליווי מקצועי ומודל עסקי יציב. הצטרפו לקבוצה הקולינרית.',
         text: 'הקבוצה שלנו פותחת את הדלת להזדמנות להצטרף להצלחה מוכחת בעולם הקולינריה. לאחר בנייה של מספר מותגים מצליחים עם קהל נאמן ותפעול מדויק, אנו מציעים ליזמים ואנשים שחיים ונושמים את תחום האוכל לקחת חלק בצמיחה - באמצעות מודל זכיינות מבוסס, יציב ורווחי.\n\nהזכיינות מאפשרת להצטרף למותגים שכבר הוכיחו את עצמם בשטח, ליהנות מליווי מקצועי מלא, קונספט מגובש, מערך שיווקי ותפעולי, וידע שנבנה מתוך ניסיון אמיתי.\n\nאנחנו מחפשים שותפים עם תשוקה לאירוח, הבנה עסקית ורצון לגדול יחד איתנו - אנשים שרוצים לקחת חלק במשהו גדול, ולהפוך הצלחה קיימת להצלחה אישית.\n\nזו לא רק הזדמנות עסקית, זו הזדמנות להיות חלק מקבוצה שמובילה, מתפתחת וממשיכה לייצר חוויות אוכל ברמה גבוהה.'
       },
       contact: {
         title: 'יצירת קשר',
+        metaDescription:
+          'יצירת קשר עם EXIT GROUP בחיפה — טלפון, אימייל, אינסטגרם וכתובת. מידע על דומו, האסיאתי, סמאש בורגר וארטו.',
         intro: 'בחרו דרך נוחה ליצירת קשר (טסט).',
         phoneLabel: 'טלפון',
         phone: '+972-50-123-4567',
@@ -61,6 +73,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
+          bookReservationLabel: 'להזמנת מקום',
           photos: ['Domo/domo_1.jpg', 'Domo/domo_2.jpg', 'Domo/domo_3.jpg']
         },
         {
@@ -85,6 +98,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
+          bookDeliveryLabel: 'להזמנת משלוח',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
@@ -107,7 +121,11 @@
       }
     },
     ru: {
-      meta: { title: 'Кулинарная группа' },
+      meta: {
+        title: 'Кулинарная группа',
+        description:
+          'EXIT GROUP — ресторанная группа в Хайфе: Domo, ASI ATI, Smash Burger и Арто. Японский лаунж-бар, азиатская кухня, бургеры и площадка для мероприятий. Официальный сайт.'
+      },
       nav: {
         orderDelivery: 'Заказ доставки',
         bookTable: 'Бронь стола',
@@ -126,7 +144,8 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'Кулинарная группа'
+        title: 'Кулинарная группа',
+        tagline: 'Рестораны в Хайфе: Домо, ASI ATI, Smash Burger, Арто'
       },
       group: {
         intro: {
@@ -136,10 +155,14 @@
       },
       join: {
         title: 'Присоединяйтесь к успеху',
+        metaDescription:
+          'Франшиза и партнёрство с EXIT GROUP в Хайфе — проверенные бренды ресторанов, сопровождение и устойчивая бизнес-модель. Узнайте, как присоединиться к группе.',
         text: 'Наша группа открывает дверь к возможности присоединиться к подтвержденному успеху в мире гастрономии. После создания нескольких сильных брендов с лояльной аудиторией и точной операционной системой, мы предлагаем предпринимателям и людям, которые живут и дышат сферой еды, стать частью роста - через выстроенную, стабильную и прибыльную франчайзинговую модель.\n\nФраншиза дает возможность присоединиться к брендам, которые уже доказали себя на практике, получить полное профессиональное сопровождение, цельную концепцию, маркетинговую и операционную систему, а также знания, выстроенные на реальном опыте.\n\nМы ищем партнеров с настоящей страстью к гостеприимству, деловым мышлением и желанием расти вместе с нами - людей, которые хотят стать частью чего-то большого и превратить существующий успех в личный.\n\nЭто не просто бизнес-возможность, это шанс стать частью группы, которая лидирует, развивается и продолжает создавать гастрономические впечатления высокого уровня.'
       },
       contact: {
         title: 'Контакты',
+        metaDescription:
+          'Контакты EXIT GROUP в Хайфе: телефон, email, Instagram и адрес. Свяжитесь с нами по вопросам ресторанов Domo, ASI ATI, Smash Burger и Арто.',
         intro: 'Выберите удобный способ связи (тест).',
         phoneLabel: 'Телефон',
         phone: '+972-50-123-4567',
@@ -162,6 +185,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
+          bookReservationLabel: 'Забронировать место',
           photos: ['Domo/domo_1.jpg', 'Domo/domo_2.jpg', 'Domo/domo_3.jpg']
         },
         {
@@ -174,6 +198,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/asi___ati/',
+          bookDeliveryLabel: 'Заказать доставку',
           photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
@@ -186,6 +211,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
+          bookDeliveryLabel: 'Заказать доставку',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
@@ -208,7 +234,11 @@
       }
     },
     en: {
-      meta: { title: 'Culinary Group' },
+      meta: {
+        title: 'Culinary Group',
+        description:
+          'EXIT GROUP — Haifa restaurant collective: Domo, ASI ATI, Smash Burger & Arto. Japanese lounge, Asian street food, smash burgers & premium events. Official site.'
+      },
       nav: {
         orderDelivery: 'Order delivery',
         bookTable: 'Book a table',
@@ -227,7 +257,8 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'Restaurant Group'
+        title: 'Restaurant Group',
+        tagline: 'Haifa: Domo, ASI ATI, Smash Burger & Arto'
       },
       group: {
         intro: {
@@ -237,10 +268,14 @@
       },
       join: {
         title: 'Join the success',
+        metaDescription:
+          'Franchise opportunities with EXIT GROUP in Haifa — proven restaurant brands, full guidance and a stable model. Join our culinary group.',
         text: 'Our group opens the door to an opportunity to join proven success in the culinary world. After building several successful brands with a loyal audience and precise operations, we offer entrepreneurs and people who live and breathe food the chance to be part of this growth - through a structured, stable, and profitable franchise model.\n\nThe franchise allows you to join brands that have already proven themselves in the field, benefit from full professional guidance, a well-defined concept, marketing and operational systems, and know-how built on real experience.\n\nWe are looking for partners with a true passion for hospitality, business understanding, and the desire to grow with us - people who want to be part of something big and turn existing success into personal success.\n\nThis is not only a business opportunity, it is an opportunity to be part of a group that leads, evolves, and continues to create high-level food experiences.'
       },
       contact: {
         title: 'Contact',
+        metaDescription:
+          'Contact EXIT GROUP in Haifa — phone, email, Instagram and office address. Reach us about Domo, ASI ATI, Smash Burger and Arto.',
         intro: 'Choose a convenient way to contact us (test).',
         phoneLabel: 'Phone',
         phone: '+972-50-123-4567',
@@ -263,6 +298,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
+          bookReservationLabel: 'Reserve a table',
           photos: ['Domo/domo_1.jpg', 'Domo/domo_2.jpg', 'Domo/domo_3.jpg']
         },
         {
@@ -275,6 +311,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/asi___ati/',
+          bookDeliveryLabel: 'Order delivery',
           photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
@@ -287,6 +324,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
+          bookDeliveryLabel: 'Order delivery',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
@@ -309,7 +347,11 @@
       }
     },
     ar: {
-      meta: { title: 'مجموعة الطهي' },
+      meta: {
+        title: 'مجموعة الطهي',
+        description:
+          'EXIT GROUP — مجموعة مطاعم في حيفا: دومو، الآسيوي، سماش برجر وآرتو. مطبخ ياباني، طعام آسيوي، برجر وفعاليات. الموقع الرسمي.'
+      },
       nav: {
         orderDelivery: 'طلب توصيل',
         bookTable: 'حجز طاولة',
@@ -328,7 +370,8 @@
       },
       hero: {
         subtitle: 'Culinary Group',
-        title: 'مجموعة المطاعم'
+        title: 'مجموعة المطاعم',
+        tagline: 'حيفا: دومو، الآسيوي، سماش برجر، آرتو'
       },
       group: {
         intro: {
@@ -338,10 +381,14 @@
       },
       join: {
         title: 'انضموا إلى النجاح',
+        metaDescription:
+          'فرص امتياز مع EXIT GROUP في حيفا — علامات مطاعم مثبتة، دعم مهني ونموذج عمل مستقر. انضموا إلى المجموعة.',
         text: 'تفتح مجموعتنا الباب أمام فرصة الانضمام إلى نجاح مثبت في عالم الطهي. بعد بناء عدة علامات ناجحة تمتلك جمهورا وفيا وتشغيلا دقيقا، نقدم لرواد الأعمال ولمن يعيشون ويتنفسون مجال الطعام فرصة المشاركة في النمو - من خلال نموذج امتياز قائم، مستقر ومربح.\n\nيمنحك الامتياز فرصة الانضمام إلى علامات أثبتت نفسها بالفعل على أرض الواقع، والاستفادة من مرافقة مهنية كاملة، ومفهوم متكامل، ومنظومة تسويقية وتشغيلية، ومعرفة مبنية على خبرة حقيقية.\n\nنحن نبحث عن شركاء لديهم شغف حقيقي بالضيافة، وفهم تجاري، ورغبة في النمو معنا - أشخاص يريدون أن يكونوا جزءا من شيء كبير، وأن يحولوا النجاح القائم إلى نجاح شخصي.\n\nهذه ليست مجرد فرصة تجارية، بل فرصة لتكون جزءا من مجموعة تقود وتتطور وتواصل صناعة تجارب طعام بمستوى عال.'
       },
       contact: {
         title: 'تواصل معنا',
+        metaDescription:
+          'تواصل مع EXIT GROUP في حيفا — هاتف، بريد، إنستغرام وعنوان. استفسارات حول دومو، الآسيوي، سماش برجر وآرتو.',
         intro: 'اختر طريقة التواصل المناسبة لك (تجريبي).',
         phoneLabel: 'الهاتف',
         phone: '+972-50-123-4567',
@@ -364,6 +411,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/domo_japanese_bar/',
+          bookReservationLabel: 'احجز مكاناً',
           photos: ['Domo/domo_1.jpg', 'Domo/domo_2.jpg', 'Domo/domo_3.jpg']
         },
         {
@@ -375,6 +423,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/asi___ati/',
+          bookDeliveryLabel: 'اطلب توصيل',
           photos: ['img/venues/asiati-1.jpeg', 'img/venues/asiati-2.jpeg', 'img/venues/asiati-3.jpeg']
         },
         {
@@ -386,6 +435,7 @@
           phoneLink: 'tel:+972',
           locationLink: '#',
           websiteLink: 'https://www.instagram.com/smashburgerhaifa/',
+          bookDeliveryLabel: 'اطلب توصيل',
           photos: ['img/venues/smash-1.jpeg', 'img/venues/smash-2.jpeg', 'img/venues/smash-3.jpeg']
         },
         {
@@ -409,21 +459,52 @@
   };
 
   var STORAGE_KEY = 'site-lang';
-  
+  var SUPPORTED_LANGS = ['he', 'ru', 'en', 'ar'];
+
+  /** e.g. /he/contact → he; /contact.html → null */
+  function parseLangFromPath(pathname) {
+    if (!pathname) return null;
+    var parts = pathname.split('/').filter(Boolean);
+    if (!parts.length) return null;
+    var first = parts[0].toLowerCase();
+    if (SUPPORTED_LANGS.indexOf(first) !== -1) return first;
+    return null;
+  }
+
+  /** home | contact | join (works with /he/contact and /contact.html) */
+  function getPageKeyFromPath() {
+    var path = '';
+    try {
+      path = (window.location.pathname || '').toLowerCase();
+    } catch (e) {}
+    if (path.indexOf('contact') !== -1) return 'contact';
+    if (path.indexOf('join') !== -1) return 'join';
+    return 'home';
+  }
+
+  /** /he/, /en/contact, /ru/join */
+  function getLocalizedPath(lang, pageKey) {
+    if (SUPPORTED_LANGS.indexOf(lang) === -1) lang = 'he';
+    if (pageKey === 'home') return '/' + lang + '/';
+    return '/' + lang + '/' + pageKey;
+  }
+
   function getDefaultLanguage() {
-    var saved = localStorage.getItem(STORAGE_KEY);
-    var supportedLangs = ['ru', 'he', 'en', 'ar'];
-    
-    if (saved && supportedLangs.indexOf(saved) !== -1) {
-      return saved;
-    }
-    
+    var fromPath = null;
+    try {
+      fromPath = parseLangFromPath(window.location.pathname || '');
+    } catch (e) {}
+    if (fromPath) return fromPath;
+
+    try {
+      var saved = localStorage.getItem(STORAGE_KEY);
+      if (saved && SUPPORTED_LANGS.indexOf(saved) !== -1) return saved;
+    } catch (e) {}
+
     var browserLang = (navigator.language || navigator.userLanguage).slice(0, 2).toLowerCase();
-    if (supportedLangs.indexOf(browserLang) !== -1) {
-      return browserLang;
-    }
-    
-    return 'en'; // default fallback for unsupported languages
+    if (SUPPORTED_LANGS.indexOf(browserLang) !== -1) return browserLang;
+
+    return 'he';
   }
 
   var currentLang = getDefaultLanguage();
@@ -437,6 +518,96 @@
       obj = obj[key];
     }
     return obj;
+  }
+
+  function absoluteAssetUrl(path) {
+    if (!path) return SITE_ORIGIN + '/logo.png';
+    if (String(path).indexOf('http') === 0) return path;
+    return SITE_ORIGIN + (path.charAt(0) === '/' ? path : '/' + path);
+  }
+
+  function getSeoPage() {
+    return getPageKeyFromPath();
+  }
+
+  function ogLocaleForLang(lang) {
+    var map = { he: 'he_IL', ru: 'ru_RU', en: 'en_US', ar: 'ar_AE' };
+    return map[lang] || 'en_US';
+  }
+
+  function setSeoMetaAttr(id, content) {
+    if (content == null) return;
+    var el = document.getElementById(id);
+    if (el) el.setAttribute('content', content);
+  }
+
+  /** Updates meta description, canonical, Open Graph and Twitter cards. */
+  function applySeoMeta() {
+    var t = translations[currentLang];
+    if (!t) return;
+
+    var page = getSeoPage();
+    var desc;
+    var pageTitle;
+    var pageUrl;
+
+    if (page === 'contact') {
+      desc = t.contact && t.contact.metaDescription;
+      pageTitle = t.contact && t.contact.title;
+      pageUrl = SITE_ORIGIN + getLocalizedPath(currentLang, 'contact');
+    } else if (page === 'join') {
+      desc = t.join && t.join.metaDescription;
+      pageTitle = t.join && t.join.title;
+      pageUrl = SITE_ORIGIN + getLocalizedPath(currentLang, 'join');
+    } else {
+      desc = t.meta && t.meta.description;
+      pageTitle = t.meta && t.meta.title;
+      pageUrl = SITE_ORIGIN + getLocalizedPath(currentLang, 'home');
+    }
+
+    var ogImage = absoluteAssetUrl('/logo.png');
+
+    setSeoMetaAttr('seo-description', desc);
+
+    var canon = document.getElementById('seo-canonical');
+    if (canon) canon.setAttribute('href', pageUrl);
+
+    setSeoMetaAttr('og-title', pageTitle);
+    setSeoMetaAttr('og-description', desc);
+    setSeoMetaAttr('og-url', pageUrl);
+    setSeoMetaAttr('og-image', ogImage);
+    setSeoMetaAttr('og-locale', ogLocaleForLang(currentLang));
+    setSeoMetaAttr('twitter-title', pageTitle);
+    setSeoMetaAttr('twitter-description', desc);
+    setSeoMetaAttr('twitter-image', ogImage);
+
+    if (pageTitle) document.title = pageTitle;
+
+    document.querySelectorAll('link[data-seo-hreflang]').forEach(function (n) {
+      n.parentNode.removeChild(n);
+    });
+    SUPPORTED_LANGS.forEach(function (l) {
+      var link = document.createElement('link');
+      link.rel = 'alternate';
+      link.hreflang = l;
+      link.href = SITE_ORIGIN + getLocalizedPath(l, page);
+      link.setAttribute('data-seo-hreflang', '1');
+      document.head.appendChild(link);
+    });
+    var xdef = document.createElement('link');
+    xdef.rel = 'alternate';
+    xdef.hreflang = 'x-default';
+    xdef.href = SITE_ORIGIN + getLocalizedPath('he', page);
+    xdef.setAttribute('data-seo-hreflang', '1');
+    document.head.appendChild(xdef);
+  }
+
+  function applyLocalizedNavHrefs() {
+    document.querySelectorAll('[data-localized-page]').forEach(function (el) {
+      var key = el.getAttribute('data-localized-page');
+      if (!key || (key !== 'home' && key !== 'contact' && key !== 'join')) return;
+      el.setAttribute('href', getLocalizedPath(currentLang, key));
+    });
   }
 
   function applyTranslations() {
@@ -470,16 +641,20 @@
           if (attr === 'href' && value === '#') {
             el.setAttribute(attr, value);
           } else {
+            if (
+              attr === 'src' &&
+              typeof value === 'string' &&
+              value.indexOf('http') !== 0 &&
+              value.indexOf('//') !== 0 &&
+              value.charAt(0) !== '/'
+            ) {
+              value = '/' + value;
+            }
             el.setAttribute(attr, value);
           }
         }
       });
     });
-
-    var titleEl = document.querySelector('title[data-i18n="meta.title"]');
-    if (titleEl && t.meta && t.meta.title) {
-      document.title = t.meta.title;
-    }
 
     document.documentElement.lang = currentLang;
     document.documentElement.dir = (currentLang === 'he' || currentLang === 'ar') ? 'rtl' : 'ltr';
@@ -488,27 +663,48 @@
       btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === currentLang ? 'true' : 'false');
     });
 
+    applyLocalizedNavHrefs();
+    applySeoMeta();
+
     if (window.setupVenueReadMore) window.setupVenueReadMore();
     if (window.setupVenueAddresses) window.setupVenueAddresses();
   }
 
   function setLang(lang) {
     if (!translations[lang]) return;
-    currentLang = lang;
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch (e) {}
+
+    var pageKey = getPageKeyFromPath();
+    var nextPath = getLocalizedPath(lang, pageKey);
+    var cur = '';
+    try {
+      cur = window.location.pathname || '';
+    } catch (e) {}
+    var curNorm = cur.replace(/\/+$/, '') || '/';
+    var nextNorm = nextPath.replace(/\/+$/, '') || '/';
+
+    var isHttp = false;
+    try {
+      isHttp = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+    } catch (e2) {}
+
+    if (isHttp && (curNorm !== nextNorm || parseLangFromPath(cur) !== lang)) {
+      try {
+        window.location.href = window.location.origin + nextPath;
+      } catch (e3) {
+        window.location.href = nextPath;
+      }
+      return;
+    }
+
+    currentLang = lang;
     applyTranslations();
   }
 
   function init() {
-    var saved = null;
-    try {
-      saved = localStorage.getItem(STORAGE_KEY);
-    } catch (e) {}
-    if (saved && translations[saved]) {
-      currentLang = saved;
-    }
+    currentLang = getDefaultLanguage();
     applyTranslations();
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
@@ -542,6 +738,10 @@
     setLang: setLang,
     getLang: function () { return currentLang; },
     getTranslation: getTranslation,
-    getVenueAddresses: getVenueAddresses
+    getVenueAddresses: getVenueAddresses,
+    getSiteOrigin: function () { return SITE_ORIGIN; },
+    getLocalizedPath: function (lang, pageKey) {
+      return getLocalizedPath(lang || currentLang, pageKey || 'home');
+    }
   };
 })();
